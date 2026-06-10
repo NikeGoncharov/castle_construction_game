@@ -2,10 +2,10 @@
 Id: 53ffb281-0767-4418-b7ab-f3d7471e1917
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Grass_Common_Tall.gltf
+Source: !file ../../SourceAssets/Nature/Grass_Common_Tall.gltf
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Nodes:
     363d01af8af7d549ee9137e78a054615: {Name: Grass_Common_Tall, Depth: 0}
 ~SourceHashes:
-    ? 7cdbcff55a68225b419396fb8f684834~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Grass_Common_Tall.gltf
+    ? 7cdbcff55a68225b419396fb8f684834~../../SourceAssets/Nature/Grass_Common_Tall.gltf
     : 8133f704f3c6017faeab9b7e016cf8c4

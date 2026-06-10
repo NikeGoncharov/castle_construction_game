@@ -2,7 +2,7 @@
 Id: c0fbbdaa-7527-49f0-a6b2-d73f45bfd0bd
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Leaves.png
+Source: !file ../../SourceAssets/Nature/Leaves.png
 Type: !ColorTextureType
     ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
     PremultiplyAlpha: false

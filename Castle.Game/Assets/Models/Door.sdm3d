@@ -2,7 +2,7 @@
 Id: 91dd427b-dc5d-4c04-b9f9-fb497de04c71
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/FBX/Door.fbx
+Source: !file ../../SourceAssets/Castle/Door.fbx
 Skeleton: 10c6bbc7-e9d8-420c-8f8e-fc4f5ee5f53b:Models/Door Skeleton
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Materials:
@@ -12,4 +12,4 @@ Materials:
             Material: 45d9f431-1f53-428d-bf33-8852a64dd0aa:Models/DarkWood
 Modifiers: {}
 ~SourceHashes:
-    76842739a701d1796278a8967c5fcf40~../../../../../Users/gontc/Downloads/FBX/Door.fbx: d44561beacdad962f6d9171c4f2c3d6b
+    76842739a701d1796278a8967c5fcf40~../../SourceAssets/Castle/Door.fbx: d44561beacdad962f6d9171c4f2c3d6b

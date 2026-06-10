@@ -2,9 +2,9 @@
 Id: 6d333654-5bc5-4526-89e7-c01463cc3da5
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/DeadTree_2.gltf
+Source: !file ../../SourceAssets/Nature/DeadTree_2.gltf
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Nodes:
     11ecb987f3241b4b499a03cb74366803: {Name: DeadTree_2, Depth: 0}
 ~SourceHashes:
-    b22f0efd66dd2f4d180aa69e348ef50e~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/DeadTree_2.gltf: c39192422af03b114d778c6954afca68
+    b22f0efd66dd2f4d180aa69e348ef50e~../../SourceAssets/Nature/DeadTree_2.gltf: c39192422af03b114d778c6954afca68

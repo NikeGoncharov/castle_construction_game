@@ -2,7 +2,7 @@
 Id: 87a45d3f-6fc8-4aec-9fc9-7cd7b02e3509
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/FBX/SmallSquareTower.fbx
+Source: !file ../../SourceAssets/Castle/SmallSquareTower.fbx
 Skeleton: 4fbc057c-506a-41b5-afdf-630a53f35e4a:Models/SmallSquareTower Skeleton
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Materials:
@@ -12,4 +12,4 @@ Materials:
             Material: e99e5257-25ca-4dfb-b6d1-8d4a8e467f90:Models/LightRock_4
 Modifiers: {}
 ~SourceHashes:
-    a2b0a4826720b7fae6118acbb0f9ab03~../../../../../Users/gontc/Downloads/FBX/SmallSquareTower.fbx: 43cae19cb3167392443337b11ae3555b
+    a2b0a4826720b7fae6118acbb0f9ab03~../../SourceAssets/Castle/SmallSquareTower.fbx: 43cae19cb3167392443337b11ae3555b

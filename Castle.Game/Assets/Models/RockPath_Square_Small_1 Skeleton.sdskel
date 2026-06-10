@@ -2,10 +2,10 @@
 Id: 5b550154-2c28-4537-860d-87a8e148644c
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/RockPath_Square_Small_1.gltf
+Source: !file ../../SourceAssets/Nature/RockPath_Square_Small_1.gltf
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Nodes:
     02ca0834b8494ed2a648632c5a0b31ff: {Name: RockPath_Square_Small_1, Depth: 0}
 ~SourceHashes:
-    ? 126fa17372f3f7bc951cce125f7e2b6d~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/RockPath_Square_Small_1.gltf
+    ? 126fa17372f3f7bc951cce125f7e2b6d~../../SourceAssets/Nature/RockPath_Square_Small_1.gltf
     : bb994ced20af56a93f922e17679b4cb7

@@ -2,10 +2,10 @@
 Id: 286608c2-e487-4261-9fd9-9bb5ddf1586e
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/RockPath_Round_Small_2.gltf
+Source: !file ../../SourceAssets/Nature/RockPath_Round_Small_2.gltf
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Nodes:
     c99354637ce4753d0fb5175bca54c402: {Name: RockPath_Round_Small_2, Depth: 0}
 ~SourceHashes:
-    ? 8dc97a3a054622e77964b545b55a35f3~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/RockPath_Round_Small_2.gltf
+    ? 8dc97a3a054622e77964b545b55a35f3~../../SourceAssets/Nature/RockPath_Round_Small_2.gltf
     : 15612dfcc19c5d36025d9aafd432f4fd

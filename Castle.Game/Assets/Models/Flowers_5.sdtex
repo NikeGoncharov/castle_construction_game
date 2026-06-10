@@ -2,7 +2,7 @@
 Id: b805672c-01d5-4956-b1e1-1dab2809efb7
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Flowers.png
+Source: !file ../../SourceAssets/Nature/Flowers.png
 Type: !ColorTextureType
     ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
     PremultiplyAlpha: false

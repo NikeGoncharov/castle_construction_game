@@ -2,9 +2,9 @@
 Id: b03e57a8-d8c6-4bd7-9880-85b6ef2b8145
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Clover_2.gltf
+Source: !file ../../SourceAssets/Nature/Clover_2.gltf
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Nodes:
     e3a8e83ad982350c33238255a7d5bc8d: {Name: Clover_2, Depth: 0}
 ~SourceHashes:
-    10335fb55841f72637fd7c4f6d821617~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Clover_2.gltf: 299c6cd62a47723093d110e8c0490459
+    10335fb55841f72637fd7c4f6d821617~../../SourceAssets/Nature/Clover_2.gltf: 299c6cd62a47723093d110e8c0490459

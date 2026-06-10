@@ -2,7 +2,7 @@
 Id: 50c1d25f-4845-480c-9706-a817e006597d
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/FBX/Watchtower.fbx
+Source: !file ../../SourceAssets/Castle/Watchtower.fbx
 Skeleton: 9bcdc4bd-041e-4cf2-9cfb-c09ca880507b:Models/Watchtower Skeleton
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Materials:
@@ -12,4 +12,4 @@ Materials:
             Material: 29b3db49-e3cd-4023-90c1-b5a8b0ba9b44:Models/LightWood_2
 Modifiers: {}
 ~SourceHashes:
-    cc72cefcf4c29af32e0aae8031001b56~../../../../../Users/gontc/Downloads/FBX/Watchtower.fbx: 0615c99ac3a08bb9cfc2441cd74a2d96
+    cc72cefcf4c29af32e0aae8031001b56~../../SourceAssets/Castle/Watchtower.fbx: 0615c99ac3a08bb9cfc2441cd74a2d96

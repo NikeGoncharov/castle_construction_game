@@ -2,7 +2,7 @@
 Id: 8710f956-0db0-48be-9e57-d57a453e3c19
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Mushroom_Common.gltf
+Source: !file ../../SourceAssets/Nature/Mushroom_Common.gltf
 Skeleton: a0c97183-0aec-4f08-8e03-0edb01e0485b:Models/Mushroom_Common Skeleton
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Materials:
@@ -12,5 +12,5 @@ Materials:
             Material: b4db2a0a-cf32-44f7-b72f-3659683a723e:Models/Mushrooms_2
 Modifiers: {}
 ~SourceHashes:
-    ? 960fcea53ddcd531cd4e215d45b66e8c~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Mushroom_Common.gltf
+    ? 960fcea53ddcd531cd4e215d45b66e8c~../../SourceAssets/Nature/Mushroom_Common.gltf
     : 7254deebea22e7dbc166d2dabc8b110b

@@ -2,10 +2,10 @@
 Id: 39fe13d7-500a-4ab0-82f0-6254d67e0b4f
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/FBX/Tower.fbx
+Source: !file ../../SourceAssets/Castle/Tower.fbx
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Nodes:
     7f5d0a7b363487c9d7deedbe1cb45fd5: {Name: RootNode, Depth: 0}
     2a5475df819982864b623be18ce8f00e: {Name: Tower, Depth: 1}
 ~SourceHashes:
-    3eece1ff9fc78ee8079dc6224c703641~../../../../../Users/gontc/Downloads/FBX/Tower.fbx: 29dcd4200625df41f2cff291b0f7dfa1
+    3eece1ff9fc78ee8079dc6224c703641~../../SourceAssets/Castle/Tower.fbx: 29dcd4200625df41f2cff291b0f7dfa1

@@ -2,9 +2,9 @@
 Id: 2ec1e225-bdb9-4de6-a59a-7fa81019f659
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Pine_3.gltf
+Source: !file ../../SourceAssets/Nature/Pine_3.gltf
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Nodes:
     b6cc1845d62085a8d11030f13a2d0e5c: {Name: Pine_3, Depth: 0}
 ~SourceHashes:
-    6c860a9faa50781e2a15d2355be0ea32~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Pine_3.gltf: 8463661384dc6e41d44d25024723d376
+    6c860a9faa50781e2a15d2355be0ea32~../../SourceAssets/Nature/Pine_3.gltf: 8463661384dc6e41d44d25024723d376

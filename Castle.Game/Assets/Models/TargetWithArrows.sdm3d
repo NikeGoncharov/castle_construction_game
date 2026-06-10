@@ -2,7 +2,7 @@
 Id: c3957d3e-030e-4bc5-b0b4-049ea672609f
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/FBX/TargetWithArrows.fbx
+Source: !file ../../SourceAssets/Castle/TargetWithArrows.fbx
 Skeleton: 115a52e2-a74a-4716-a327-720ccc03d988:Models/TargetWithArrows Skeleton
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Materials:
@@ -12,4 +12,4 @@ Materials:
             Material: efe921e1-1bbb-431d-b5ba-8a07351488b1:Models/White_2
 Modifiers: {}
 ~SourceHashes:
-    b3df12f62df16ee9db606ef21dfc35b8~../../../../../Users/gontc/Downloads/FBX/TargetWithArrows.fbx: 92faa69ccdea3779a0d0418af22e55dc
+    b3df12f62df16ee9db606ef21dfc35b8~../../SourceAssets/Castle/TargetWithArrows.fbx: 92faa69ccdea3779a0d0418af22e55dc

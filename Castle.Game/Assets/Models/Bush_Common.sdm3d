@@ -2,7 +2,7 @@
 Id: fed09609-887b-417e-8518-2d764b3a45b8
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Bush_Common.gltf
+Source: !file ../../SourceAssets/Nature/Bush_Common.gltf
 Skeleton: b94fac84-cfce-46fe-a9fb-4abcb406e27d:Models/Bush_Common Skeleton
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Materials:
@@ -12,4 +12,4 @@ Materials:
             Material: cec1d2f3-16f2-4878-913a-213a77cd1266:Models/Leaves_TwistedTree_6
 Modifiers: {}
 ~SourceHashes:
-    04dc9da592b729339b373f0dbd6101c1~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Bush_Common.gltf: 286d27fef6ef38889a330caac9e95bec
+    04dc9da592b729339b373f0dbd6101c1~../../SourceAssets/Nature/Bush_Common.gltf: 286d27fef6ef38889a330caac9e95bec

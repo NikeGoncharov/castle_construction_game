@@ -2,10 +2,10 @@
 Id: ba5c6e23-6562-4021-a3d2-536c76643dc7
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/FBX/LargeTower.fbx
+Source: !file ../../SourceAssets/Castle/LargeTower.fbx
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Nodes:
     d903532c0ca86a18820aed58b8a3826f: {Name: RootNode, Depth: 0}
     49953512fd3ac099553821496ed43e7f: {Name: LargeTower, Depth: 1}
 ~SourceHashes:
-    6cc4544c0510fd9c678c53bc11710627~../../../../../Users/gontc/Downloads/FBX/LargeTower.fbx: 72bb7e4b22644688714b3e613c9f7741
+    6cc4544c0510fd9c678c53bc11710627~../../SourceAssets/Castle/LargeTower.fbx: 72bb7e4b22644688714b3e613c9f7741

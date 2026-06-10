@@ -2,7 +2,7 @@
 Id: f4d8fa62-f9dd-4733-925d-abab52518962
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Rock_Medium_1.gltf
+Source: !file ../../SourceAssets/Nature/Rock_Medium_1.gltf
 Skeleton: 6c9d9dfe-55fc-434f-acd4-2835c89a502e:Models/Rock_Medium_1 Skeleton
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Materials:
@@ -12,4 +12,4 @@ Materials:
             Material: 50e16954-25f9-4186-afc2-ea5a7e453f38:Models/Rocks
 Modifiers: {}
 ~SourceHashes:
-    a451b0624b52d45a9fb8e75bd9f4ba4b~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Rock_Medium_1.gltf: c5db76e171243a84130c38ad940bc120
+    a451b0624b52d45a9fb8e75bd9f4ba4b~../../SourceAssets/Nature/Rock_Medium_1.gltf: c5db76e171243a84130c38ad940bc120

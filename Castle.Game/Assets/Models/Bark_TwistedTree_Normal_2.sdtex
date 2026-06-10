@@ -2,7 +2,7 @@
 Id: 091d013d-0c02-4371-9f22-8d954042b616
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Bark_TwistedTree_Normal.png
+Source: !file ../../SourceAssets/Nature/Bark_TwistedTree_Normal.png
 Type: !ColorTextureType
     ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
     PremultiplyAlpha: false

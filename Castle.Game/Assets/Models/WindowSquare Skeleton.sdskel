@@ -2,10 +2,10 @@
 Id: 650647cb-75ab-4771-be92-723e99386227
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/FBX/WindowSquare.fbx
+Source: !file ../../SourceAssets/Castle/WindowSquare.fbx
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Nodes:
     71ebba30c2863b00ce90cef5b1bc7f3e: {Name: RootNode, Depth: 0}
     6bb77aab05209859d1a86f080cfc5750: {Name: WindowSquare, Depth: 1}
 ~SourceHashes:
-    453bbf75c927d1645770843b9fba2bda~../../../../../Users/gontc/Downloads/FBX/WindowSquare.fbx: 8e89212dc4934dbdc6572b0abbe411dc
+    453bbf75c927d1645770843b9fba2bda~../../SourceAssets/Castle/WindowSquare.fbx: 8e89212dc4934dbdc6572b0abbe411dc

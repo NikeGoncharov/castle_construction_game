@@ -2,7 +2,7 @@
 Id: 10c6bbc7-e9d8-420c-8f8e-fc4f5ee5f53b
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/FBX/Door.fbx
+Source: !file ../../SourceAssets/Castle/Door.fbx
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Nodes:
     c02a941d4a7b6ddf0b00496a94ee795c: {Name: RootNode, Depth: 0}
@@ -10,4 +10,4 @@ Nodes:
     41baec01843693ca624ba82c08201850: {Name: LeftDoor, Depth: 1}
     7955d099f5cbd56281c379bb5e24da77: {Name: RightDoor, Depth: 1}
 ~SourceHashes:
-    e25331f3c171a8f0c248068621222e5c~../../../../../Users/gontc/Downloads/FBX/Door.fbx: d44561beacdad962f6d9171c4f2c3d6b
+    e25331f3c171a8f0c248068621222e5c~../../SourceAssets/Castle/Door.fbx: d44561beacdad962f6d9171c4f2c3d6b

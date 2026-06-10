@@ -2,9 +2,9 @@
 Id: 1a5e39b6-eb33-4e87-b07f-43a11202116d
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/TwistedTree_1.gltf
+Source: !file ../../SourceAssets/Nature/TwistedTree_1.gltf
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Nodes:
     9f8cb1935a1b9cbf8f4073d677c2188f: {Name: TwistedTree_1, Depth: 0}
 ~SourceHashes:
-    320bfe2374e7b4970c79ca7f65445195~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/TwistedTree_1.gltf: bac648b9a17b6fda0f8fd2844e14ba37
+    320bfe2374e7b4970c79ca7f65445195~../../SourceAssets/Nature/TwistedTree_1.gltf: bac648b9a17b6fda0f8fd2844e14ba37

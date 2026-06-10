@@ -2,10 +2,10 @@
 Id: 8a69ad8d-5193-4125-9281-ee9ad235f456
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Flower_3_Single.gltf
+Source: !file ../../SourceAssets/Nature/Flower_3_Single.gltf
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Nodes:
     42e139d4f50fa80ba998716806e3e8f1: {Name: Flower_3_Single, Depth: 0}
 ~SourceHashes:
-    ? 799d7ed4d1bb34ed791193a029041024~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Flower_3_Single.gltf
+    ? 799d7ed4d1bb34ed791193a029041024~../../SourceAssets/Nature/Flower_3_Single.gltf
     : 918ab9c8dcf4930d48565c288387b8ee

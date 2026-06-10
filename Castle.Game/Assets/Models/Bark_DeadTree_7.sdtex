@@ -2,7 +2,7 @@
 Id: fe0f710d-c5f0-431f-9867-64988961d295
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Bark_DeadTree.png
+Source: !file ../../SourceAssets/Nature/Bark_DeadTree.png
 Type: !ColorTextureType
     ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
     PremultiplyAlpha: false

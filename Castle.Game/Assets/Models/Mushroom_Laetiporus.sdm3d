@@ -2,7 +2,7 @@
 Id: 24f9cdc7-6cf4-4162-958c-8ea721c2eb05
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Mushroom_Laetiporus.gltf
+Source: !file ../../SourceAssets/Nature/Mushroom_Laetiporus.gltf
 Skeleton: d2bb12bb-c35d-4aef-9412-942e4d45f192:Models/Mushroom_Laetiporus Skeleton
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Materials:
@@ -12,5 +12,5 @@ Materials:
             Material: 8d8c192b-8e06-4c4b-91e9-4718d9eb8793:Models/Mushrooms_4
 Modifiers: {}
 ~SourceHashes:
-    ? e20fa153f8e192eccd1307470c3fd5bb~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Mushroom_Laetiporus.gltf
+    ? e20fa153f8e192eccd1307470c3fd5bb~../../SourceAssets/Nature/Mushroom_Laetiporus.gltf
     : 473310b4a7364bbe2516ba0de8c04e03

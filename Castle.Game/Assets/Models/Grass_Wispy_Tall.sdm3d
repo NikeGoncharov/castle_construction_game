@@ -2,7 +2,7 @@
 Id: 3138f222-0fad-4da2-b960-98a6cbdf75bd
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Grass_Wispy_Tall.gltf
+Source: !file ../../SourceAssets/Nature/Grass_Wispy_Tall.gltf
 Skeleton: 32c5a8fe-fb8c-4aff-98e2-d87d3f9c5495:Models/Grass_Wispy_Tall Skeleton
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Materials:
@@ -12,5 +12,5 @@ Materials:
             Material: 67977786-fa42-444e-8b24-a4ca6907e5c8:Models/Grass_8
 Modifiers: {}
 ~SourceHashes:
-    ? be4968c6b5b2977026574d6c855e6f4b~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Grass_Wispy_Tall.gltf
+    ? be4968c6b5b2977026574d6c855e6f4b~../../SourceAssets/Nature/Grass_Wispy_Tall.gltf
     : de4d9311658b61c61bc38824aa67c82a

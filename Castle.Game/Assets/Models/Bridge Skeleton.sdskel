@@ -2,10 +2,10 @@
 Id: e7e07b42-33d4-4e14-85f1-22035632cd40
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/FBX/Bridge.fbx
+Source: !file ../../SourceAssets/Castle/Bridge.fbx
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Nodes:
     7bb0a2e2a6f733de8d252f0c35c0d513: {Name: RootNode, Depth: 0}
     a8217df9857dc36696a225a527cc536f: {Name: Bridge, Depth: 1}
 ~SourceHashes:
-    d80d5a538c04155dd5175ae6cd4a503b~../../../../../Users/gontc/Downloads/FBX/Bridge.fbx: a973955d2d13305ff5b6cf10ec9bceb1
+    d80d5a538c04155dd5175ae6cd4a503b~../../SourceAssets/Castle/Bridge.fbx: a973955d2d13305ff5b6cf10ec9bceb1

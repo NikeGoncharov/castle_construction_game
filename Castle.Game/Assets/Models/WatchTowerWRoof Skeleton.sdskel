@@ -2,10 +2,10 @@
 Id: 5bb4baee-aeaa-47c3-aded-12f9fed3f54f
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/FBX/WatchTowerWRoof.fbx
+Source: !file ../../SourceAssets/Castle/WatchTowerWRoof.fbx
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Nodes:
     e4e08c4af5cafecd622614fe2763482b: {Name: RootNode, Depth: 0}
     af3057b74de53c5bf33d992db0e1352d: {Name: WatchtowerWithRoof, Depth: 1}
 ~SourceHashes:
-    3a9d5560359869016aaa57f117402aa9~../../../../../Users/gontc/Downloads/FBX/WatchTowerWRoof.fbx: 0b6ce0fc9904efcd2af2771ea41f936f
+    3a9d5560359869016aaa57f117402aa9~../../SourceAssets/Castle/WatchTowerWRoof.fbx: 0b6ce0fc9904efcd2af2771ea41f936f

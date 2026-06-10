@@ -2,7 +2,7 @@
 Id: 57a2ad3e-5ef8-4a67-be6f-4ea8d6ae691a
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/PathRocks_Diffuse.png
+Source: !file ../../SourceAssets/Nature/PathRocks_Diffuse.png
 Type: !ColorTextureType
     ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
     PremultiplyAlpha: false

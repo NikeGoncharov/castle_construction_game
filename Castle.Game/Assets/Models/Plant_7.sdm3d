@@ -2,7 +2,7 @@
 Id: f6821fc8-ee2e-4f81-a3d5-fd7e45bc701a
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Plant_7.gltf
+Source: !file ../../SourceAssets/Nature/Plant_7.gltf
 Skeleton: a6c2e12c-686f-454f-b827-578a67e8a00f:Models/Plant_7 Skeleton
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Materials:
@@ -12,4 +12,4 @@ Materials:
             Material: 7dcc563e-3120-4188-bcfd-12de92af1803:Models/Leaves_16
 Modifiers: {}
 ~SourceHashes:
-    401f607050d9c1e3687accf1ba23c23e~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Plant_7.gltf: 975d938793f8c71f298dea39390c318c
+    401f607050d9c1e3687accf1ba23c23e~../../SourceAssets/Nature/Plant_7.gltf: 975d938793f8c71f298dea39390c318c

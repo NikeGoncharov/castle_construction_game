@@ -2,7 +2,7 @@
 Id: 4c38297a-0e4d-4d25-b165-5424545dc374
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Leaf_Pine_C.png
+Source: !file ../../SourceAssets/Nature/Leaf_Pine_C.png
 Type: !ColorTextureType
     ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
     PremultiplyAlpha: false

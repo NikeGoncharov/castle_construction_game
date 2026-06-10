@@ -2,7 +2,7 @@
 Id: 9e2d187a-8776-4824-b39a-0fd4bdbb6ce0
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/FBX/SimpleTowerBricks.fbx
+Source: !file ../../SourceAssets/Castle/SimpleTowerBricks.fbx
 Skeleton: 02a3a5bb-d90e-42b2-b8fb-b9db88003905:Models/SimpleTowerBricks Skeleton
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Materials:
@@ -12,4 +12,4 @@ Materials:
             Material: 32b91c32-5af8-4ce0-bf43-f5b6d9ede2de:Models/LightRock.002
 Modifiers: {}
 ~SourceHashes:
-    9059bb370e556b41ef8fe2d0e2c3c0d7~../../../../../Users/gontc/Downloads/FBX/SimpleTowerBricks.fbx: c7808afc08addbf6cf450bb275930106
+    9059bb370e556b41ef8fe2d0e2c3c0d7~../../SourceAssets/Castle/SimpleTowerBricks.fbx: c7808afc08addbf6cf450bb275930106

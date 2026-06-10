@@ -2,7 +2,7 @@
 Id: b113aecb-f30e-489c-a15a-2ca7967f4035
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Petal_1.gltf
+Source: !file ../../SourceAssets/Nature/Petal_1.gltf
 Skeleton: a25322ae-79f5-43d3-92ab-50be52d0d7ca:Models/Petal_1 Skeleton
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Materials:
@@ -12,4 +12,4 @@ Materials:
             Material: 5502b6c5-1c60-43d5-9098-1c0f7005950b:Models/Flowers_10
 Modifiers: {}
 ~SourceHashes:
-    9942fd510f6412e674621f2522220c73~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Petal_1.gltf: 0c4bb09b8f928815fe4e8757f54f0d00
+    9942fd510f6412e674621f2522220c73~../../SourceAssets/Nature/Petal_1.gltf: 0c4bb09b8f928815fe4e8757f54f0d00

@@ -2,7 +2,7 @@
 Id: 3fec52d5-4107-4067-93be-8e348dec56a9
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/CommonTree_1.gltf
+Source: !file ../../SourceAssets/Nature/CommonTree_1.gltf
 Skeleton: 1083b558-9472-494a-ad55-dcbcf1b724ff:Models/CommonTree_1 Skeleton
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Materials:
@@ -16,4 +16,4 @@ Materials:
             Material: 227b0898-7465-45af-9f9e-6aecd67e230c:Models/Leaves_NormalTree_5
 Modifiers: {}
 ~SourceHashes:
-    260d712c426ddcba9e55b0b7ff126990~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/CommonTree_1.gltf: d60321de787ffb7890f99e4626c85783
+    260d712c426ddcba9e55b0b7ff126990~../../SourceAssets/Nature/CommonTree_1.gltf: d60321de787ffb7890f99e4626c85783

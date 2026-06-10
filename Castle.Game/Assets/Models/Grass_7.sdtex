@@ -2,7 +2,7 @@
 Id: 216f0159-403a-42fe-851b-b949be8840fe
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Grass.png
+Source: !file ../../SourceAssets/Nature/Grass.png
 Type: !ColorTextureType
     ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
     PremultiplyAlpha: false

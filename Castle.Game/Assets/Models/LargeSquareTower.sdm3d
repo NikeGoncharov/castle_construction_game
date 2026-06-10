@@ -2,7 +2,7 @@
 Id: bda658fc-6e4b-4617-a67b-699a392753c3
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/FBX/LargeSquareTower.fbx
+Source: !file ../../SourceAssets/Castle/LargeSquareTower.fbx
 Skeleton: c0f935ec-d7d0-4c0a-81b7-ff07780ff8ed:Models/LargeSquareTower Skeleton
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Materials:
@@ -12,4 +12,4 @@ Materials:
             Material: 8dc3d528-d2ef-4f02-a0ff-83b48cc8036e:Models/LightRock_2
 Modifiers: {}
 ~SourceHashes:
-    bac2f002e907ba7d750cec0da901a327~../../../../../Users/gontc/Downloads/FBX/LargeSquareTower.fbx: 26bae11a7fe87768b60ac8be4cf1827a
+    bac2f002e907ba7d750cec0da901a327~../../SourceAssets/Castle/LargeSquareTower.fbx: 26bae11a7fe87768b60ac8be4cf1827a

@@ -2,10 +2,10 @@
 Id: 4fbc057c-506a-41b5-afdf-630a53f35e4a
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/FBX/SmallSquareTower.fbx
+Source: !file ../../SourceAssets/Castle/SmallSquareTower.fbx
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Nodes:
     f45fd0cd533f84defe319d31257f5448: {Name: RootNode, Depth: 0}
     51811ac1dd28123baf8f543b5655ed68: {Name: SmallSquareTower, Depth: 1}
 ~SourceHashes:
-    08003091ab580c6eda56d10deb4bbdeb~../../../../../Users/gontc/Downloads/FBX/SmallSquareTower.fbx: 43cae19cb3167392443337b11ae3555b
+    08003091ab580c6eda56d10deb4bbdeb~../../SourceAssets/Castle/SmallSquareTower.fbx: 43cae19cb3167392443337b11ae3555b

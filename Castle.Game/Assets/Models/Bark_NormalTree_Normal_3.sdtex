@@ -2,7 +2,7 @@
 Id: 666d4202-2440-490a-9619-55d8707903bc
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Bark_NormalTree_Normal.png
+Source: !file ../../SourceAssets/Nature/Bark_NormalTree_Normal.png
 Type: !ColorTextureType
     ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
     PremultiplyAlpha: false

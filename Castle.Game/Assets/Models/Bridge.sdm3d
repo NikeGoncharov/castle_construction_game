@@ -2,7 +2,7 @@
 Id: 6fd2b048-0ff9-4a3a-96e2-fe80a729ec92
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/FBX/Bridge.fbx
+Source: !file ../../SourceAssets/Castle/Bridge.fbx
 Skeleton: e7e07b42-33d4-4e14-85f1-22035632cd40:Models/Bridge Skeleton
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Materials:
@@ -12,4 +12,4 @@ Materials:
             Material: b3c2fa32-f726-4b59-a2eb-be8e94fd96a2:Models/Material.006
 Modifiers: {}
 ~SourceHashes:
-    b1ed878e41a6c04d648e7c918d11f05c~../../../../../Users/gontc/Downloads/FBX/Bridge.fbx: a973955d2d13305ff5b6cf10ec9bceb1
+    b1ed878e41a6c04d648e7c918d11f05c~../../SourceAssets/Castle/Bridge.fbx: a973955d2d13305ff5b6cf10ec9bceb1

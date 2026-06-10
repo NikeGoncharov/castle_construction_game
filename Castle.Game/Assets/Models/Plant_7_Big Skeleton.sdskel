@@ -2,9 +2,9 @@
 Id: c7a00ddd-1941-473f-a71c-1ba78454ae44
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Plant_7_Big.gltf
+Source: !file ../../SourceAssets/Nature/Plant_7_Big.gltf
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Nodes:
     4fadf89c0a18e35b6fc63cabb04e61c2: {Name: Plant_7_Big, Depth: 0}
 ~SourceHashes:
-    2e2649cf81e67db6c5afa6c39b1d4853~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Plant_7_Big.gltf: 25d48b48176c3964bb04c32f2591182b
+    2e2649cf81e67db6c5afa6c39b1d4853~../../SourceAssets/Nature/Plant_7_Big.gltf: 25d48b48176c3964bb04c32f2591182b

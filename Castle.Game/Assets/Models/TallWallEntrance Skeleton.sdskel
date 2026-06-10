@@ -2,10 +2,10 @@
 Id: d990bc3f-0044-43cc-a33b-b4a763fef55c
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/FBX/TallWallEntrance.fbx
+Source: !file ../../SourceAssets/Castle/TallWallEntrance.fbx
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Nodes:
     9d91703f4e42defa700e75acbe46098d: {Name: RootNode, Depth: 0}
     2267528f98f3c7ccd9b4e0be819c59b0: {Name: TallWallEntrance, Depth: 1}
 ~SourceHashes:
-    c0f9712337a8cbc42105f9dce6439f4e~../../../../../Users/gontc/Downloads/FBX/TallWallEntrance.fbx: 341b24bf1f6f0f6110fc62a09aecc9d1
+    c0f9712337a8cbc42105f9dce6439f4e~../../SourceAssets/Castle/TallWallEntrance.fbx: 341b24bf1f6f0f6110fc62a09aecc9d1

@@ -2,9 +2,9 @@
 Id: e671c1f8-0aaa-404d-9437-f6215a567673
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Pebble_Round_1.gltf
+Source: !file ../../SourceAssets/Nature/Pebble_Round_1.gltf
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Nodes:
     3a20f1ca84ed0377233b7e52bec447f1: {Name: Pebble_Round_1, Depth: 0}
 ~SourceHashes:
-    97e12e0184db69c682cb56c6d8e8d40a~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Pebble_Round_1.gltf: 4423390db9f3ecf770aec64eab80010a
+    97e12e0184db69c682cb56c6d8e8d40a~../../SourceAssets/Nature/Pebble_Round_1.gltf: 4423390db9f3ecf770aec64eab80010a

@@ -2,10 +2,10 @@
 Id: 972ea50c-44db-4463-b44b-3649b8ba6f25
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/FBX/Banner.fbx
+Source: !file ../../SourceAssets/Castle/Banner.fbx
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Nodes:
     664e4cfe1ffd37e9ef72241aa1bf4dc7: {Name: RootNode, Depth: 0}
     f16546ff054bfa097f9f528bcf395ebc: {Name: Banner, Depth: 1}
 ~SourceHashes:
-    541d004b631b8cdfd6353c1aaf54c80b~../../../../../Users/gontc/Downloads/FBX/Banner.fbx: de2c6b971ce0b739d2a6fa0bdecc2614
+    541d004b631b8cdfd6353c1aaf54c80b~../../SourceAssets/Castle/Banner.fbx: de2c6b971ce0b739d2a6fa0bdecc2614

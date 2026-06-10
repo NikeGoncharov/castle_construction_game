@@ -2,7 +2,7 @@
 Id: c67fd459-9b1a-4cbe-ad33-59980b4f65f8
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Grass_Common_Short.gltf
+Source: !file ../../SourceAssets/Nature/Grass_Common_Short.gltf
 Skeleton: 9b41f317-76d3-4696-a456-f2459ff1d2fc:Models/Grass_Common_Short Skeleton
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Materials:
@@ -12,5 +12,5 @@ Materials:
             Material: 644c781e-46e7-4147-a99a-f624c8c22a76:Models/Grass_2
 Modifiers: {}
 ~SourceHashes:
-    ? adf4292623359f392c2913d58627e729~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Grass_Common_Short.gltf
+    ? adf4292623359f392c2913d58627e729~../../SourceAssets/Nature/Grass_Common_Short.gltf
     : d25966d6fcbc4764c66df6501b22e4e2

@@ -2,7 +2,7 @@
 Id: e0de9353-7c44-427e-b158-6d6b4f52d492
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Pebble_Round_1.gltf
+Source: !file ../../SourceAssets/Nature/Pebble_Round_1.gltf
 Skeleton: e671c1f8-0aaa-404d-9437-f6215a567673:Models/Pebble_Round_1 Skeleton
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Materials:
@@ -12,4 +12,4 @@ Materials:
             Material: ea9c8d10-938f-4a75-b2fa-e068ccef166d:Models/PathRocks
 Modifiers: {}
 ~SourceHashes:
-    c35f127874a19d78c260eabb15c58433~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Pebble_Round_1.gltf: 4423390db9f3ecf770aec64eab80010a
+    c35f127874a19d78c260eabb15c58433~../../SourceAssets/Nature/Pebble_Round_1.gltf: 4423390db9f3ecf770aec64eab80010a

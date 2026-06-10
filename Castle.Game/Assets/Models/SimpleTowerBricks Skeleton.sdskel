@@ -2,10 +2,10 @@
 Id: 02a3a5bb-d90e-42b2-b8fb-b9db88003905
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/FBX/SimpleTowerBricks.fbx
+Source: !file ../../SourceAssets/Castle/SimpleTowerBricks.fbx
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Nodes:
     93deada8914e8ce76404b7ccd5abdc1d: {Name: RootNode, Depth: 0}
     104a483f21c088abf518c5044eeb783d: {Name: SimpleTowerBricks, Depth: 1}
 ~SourceHashes:
-    184b9751c65000481f356a29469bb951~../../../../../Users/gontc/Downloads/FBX/SimpleTowerBricks.fbx: c7808afc08addbf6cf450bb275930106
+    184b9751c65000481f356a29469bb951~../../SourceAssets/Castle/SimpleTowerBricks.fbx: c7808afc08addbf6cf450bb275930106

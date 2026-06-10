@@ -2,7 +2,7 @@
 Id: 80c00c1e-78aa-4cde-ad61-90c2c4bebcce
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Pine_4.gltf
+Source: !file ../../SourceAssets/Nature/Pine_4.gltf
 Skeleton: 18828995-726b-4eb0-9dee-007affb0e381:Models/Pine_4 Skeleton
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Materials:
@@ -16,4 +16,4 @@ Materials:
             Material: 6316516d-5903-463c-8758-73c5ea41257c:Models/Leaves_Pine_4
 Modifiers: {}
 ~SourceHashes:
-    8fd95447f836ddab7ad6936723477530~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Pine_4.gltf: f9d0bf7057c78d8ff96b44f7f0853849
+    8fd95447f836ddab7ad6936723477530~../../SourceAssets/Nature/Pine_4.gltf: f9d0bf7057c78d8ff96b44f7f0853849

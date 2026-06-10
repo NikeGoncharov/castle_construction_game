@@ -2,7 +2,7 @@
 Id: c321c019-d84e-4531-9842-190b3bd5d2da
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Leaves_TwistedTree_C.png
+Source: !file ../../SourceAssets/Nature/Leaves_TwistedTree_C.png
 Type: !ColorTextureType
     ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
     PremultiplyAlpha: false

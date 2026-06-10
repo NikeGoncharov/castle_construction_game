@@ -2,10 +2,10 @@
 Id: 3aab7a05-5a4a-4d04-a43f-6e83cff140f2
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/FBX/Target.fbx
+Source: !file ../../SourceAssets/Castle/Target.fbx
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Nodes:
     d755199493798575bc55ec49679f6727: {Name: RootNode, Depth: 0}
     2c07f21d75198fc16b664550d2341ed3: {Name: Target, Depth: 1}
 ~SourceHashes:
-    f5b62ec6c50f194b750c2a85c1d80c15~../../../../../Users/gontc/Downloads/FBX/Target.fbx: 0a132bf01c05d3400bb137f796c71bc7
+    f5b62ec6c50f194b750c2a85c1d80c15~../../SourceAssets/Castle/Target.fbx: 0a132bf01c05d3400bb137f796c71bc7

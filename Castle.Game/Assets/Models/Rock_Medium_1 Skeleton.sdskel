@@ -2,9 +2,9 @@
 Id: 6c9d9dfe-55fc-434f-acd4-2835c89a502e
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Rock_Medium_1.gltf
+Source: !file ../../SourceAssets/Nature/Rock_Medium_1.gltf
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Nodes:
     0ad74018ca83337a12acce977e777f15: {Name: Rock_Medium_1, Depth: 0}
 ~SourceHashes:
-    19366971c0c0c4bd6e3f525649bc8be2~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Rock_Medium_1.gltf: c5db76e171243a84130c38ad940bc120
+    19366971c0c0c4bd6e3f525649bc8be2~../../SourceAssets/Nature/Rock_Medium_1.gltf: c5db76e171243a84130c38ad940bc120

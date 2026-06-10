@@ -2,7 +2,7 @@
 Id: 48f54901-c450-49ad-938c-35d310020a2d
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/FBX/WallEntranceBricks.fbx
+Source: !file ../../SourceAssets/Castle/WallEntranceBricks.fbx
 Skeleton: b63956b9-f273-4fa8-ae10-24285a02abe7:Models/WallEntranceBricks Skeleton
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Materials:
@@ -12,4 +12,4 @@ Materials:
             Material: 681dd50a-619a-4a2b-a1bf-3ceccc911ad9:Models/LightRock_14
 Modifiers: {}
 ~SourceHashes:
-    85dde715a8b4e21d36d94719dbd26c35~../../../../../Users/gontc/Downloads/FBX/WallEntranceBricks.fbx: d8da3efa81a58d415c56cfc484fe802e
+    85dde715a8b4e21d36d94719dbd26c35~../../SourceAssets/Castle/WallEntranceBricks.fbx: d8da3efa81a58d415c56cfc484fe802e

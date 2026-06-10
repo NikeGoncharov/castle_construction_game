@@ -2,7 +2,7 @@
 Id: 3029e608-011a-4028-a06f-52a58e16b1f7
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Clover_1.gltf
+Source: !file ../../SourceAssets/Nature/Clover_1.gltf
 Skeleton: c3259b12-d7a5-48db-88a0-e1ccafdc83fa:Models/Clover_1 Skeleton
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Materials:
@@ -12,4 +12,4 @@ Materials:
             Material: a0ad1f76-341a-4e42-a879-cd0be1d934b4:Models/Leaves_20
 Modifiers: {}
 ~SourceHashes:
-    c6e0dc588331036bd4d2d75d6751fd52~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Clover_1.gltf: 203339de3062a4f7d71a76605af5e2c3
+    c6e0dc588331036bd4d2d75d6751fd52~../../SourceAssets/Nature/Clover_1.gltf: 203339de3062a4f7d71a76605af5e2c3

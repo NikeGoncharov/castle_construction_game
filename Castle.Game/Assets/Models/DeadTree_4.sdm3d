@@ -2,7 +2,7 @@
 Id: 837916cc-b74e-437a-a507-c4cb76d1947a
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/DeadTree_4.gltf
+Source: !file ../../SourceAssets/Nature/DeadTree_4.gltf
 Skeleton: fe79cf52-47fb-4f7d-baff-2d622cb0fc6e:Models/DeadTree_4 Skeleton
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Materials:
@@ -12,4 +12,4 @@ Materials:
             Material: 3230cc15-3c08-4c54-99ff-38053d65e62d:Models/Bark_DeadTree_8
 Modifiers: {}
 ~SourceHashes:
-    e8801c877b77a41ee16b8c9f15263d54~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/DeadTree_4.gltf: 4460e0f904763f00d3c7da4b2f56bb2a
+    e8801c877b77a41ee16b8c9f15263d54~../../SourceAssets/Nature/DeadTree_4.gltf: 4460e0f904763f00d3c7da4b2f56bb2a

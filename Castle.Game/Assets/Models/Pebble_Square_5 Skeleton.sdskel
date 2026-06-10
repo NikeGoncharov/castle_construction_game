@@ -2,10 +2,10 @@
 Id: 6edfbe68-76bd-4892-adcd-7d2da9bb2e00
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Pebble_Square_5.gltf
+Source: !file ../../SourceAssets/Nature/Pebble_Square_5.gltf
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Nodes:
     fcc7143dbf990a212bf0b236c3452cca: {Name: Pebble_Square_5, Depth: 0}
 ~SourceHashes:
-    ? 093d5f233ee7f7235ce247c367a52331~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Pebble_Square_5.gltf
+    ? 093d5f233ee7f7235ce247c367a52331~../../SourceAssets/Nature/Pebble_Square_5.gltf
     : bbd77477c82f930cf448906db3302355

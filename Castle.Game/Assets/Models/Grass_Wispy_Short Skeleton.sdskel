@@ -2,10 +2,10 @@
 Id: e717cbfa-6ec5-4424-b82f-c3de6b8790fa
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Grass_Wispy_Short.gltf
+Source: !file ../../SourceAssets/Nature/Grass_Wispy_Short.gltf
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Nodes:
     62b2032863443d2904743554747fb2db: {Name: Grass_Wispy_Short, Depth: 0}
 ~SourceHashes:
-    ? 659050213d6fade90a58da24ccd9d913~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Grass_Wispy_Short.gltf
+    ? 659050213d6fade90a58da24ccd9d913~../../SourceAssets/Nature/Grass_Wispy_Short.gltf
     : 215948eb4390714e1a9e30d8247d30d2

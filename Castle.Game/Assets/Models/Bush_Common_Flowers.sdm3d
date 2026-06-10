@@ -2,7 +2,7 @@
 Id: 718e37ed-a68f-4e25-9389-8f4a808d3e01
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Bush_Common_Flowers.gltf
+Source: !file ../../SourceAssets/Nature/Bush_Common_Flowers.gltf
 Skeleton: 90953704-0df2-49a6-84ee-21aebd04916b:Models/Bush_Common_Flowers Skeleton
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Materials:
@@ -16,5 +16,5 @@ Materials:
             Material: ecf29ea7-a650-48d5-b757-7b5adc5e561b:Models/Flowers_20
 Modifiers: {}
 ~SourceHashes:
-    ? edbce0bd3b53fd9086d144d583502001~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Bush_Common_Flowers.gltf
+    ? edbce0bd3b53fd9086d144d583502001~../../SourceAssets/Nature/Bush_Common_Flowers.gltf
     : 12fb98a7a73530d85f23e246d7bdfc2f

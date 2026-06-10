@@ -2,10 +2,10 @@
 Id: a58449d3-408f-4e82-b213-4284975e87e3
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/FBX/PointyTower.fbx
+Source: !file ../../SourceAssets/Castle/PointyTower.fbx
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Nodes:
     06a83a98aac7654dfcc557251c207c25: {Name: RootNode, Depth: 0}
     31153a69b68a8f5019c741ca9e6c2909: {Name: PointyTower, Depth: 1}
 ~SourceHashes:
-    1e32cb7f57e99dba39733ddfc17f4652~../../../../../Users/gontc/Downloads/FBX/PointyTower.fbx: 2309f641bcc0ea87b2c81c9c52a4945a
+    1e32cb7f57e99dba39733ddfc17f4652~../../SourceAssets/Castle/PointyTower.fbx: 2309f641bcc0ea87b2c81c9c52a4945a

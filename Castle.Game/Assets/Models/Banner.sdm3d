@@ -2,7 +2,7 @@
 Id: b1b45779-7746-4b8e-9366-7facfcefc605
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/FBX/Banner.fbx
+Source: !file ../../SourceAssets/Castle/Banner.fbx
 Skeleton: 972ea50c-44db-4463-b44b-3649b8ba6f25:Models/Banner Skeleton
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Materials:
@@ -12,4 +12,4 @@ Materials:
             Material: 5d3a14b8-b4e2-4e82-9aa0-9236f4b75511:Models/LightWood
 Modifiers: {}
 ~SourceHashes:
-    c37c76426b87d0f50daa62b703720bd1~../../../../../Users/gontc/Downloads/FBX/Banner.fbx: de2c6b971ce0b739d2a6fa0bdecc2614
+    c37c76426b87d0f50daa62b703720bd1~../../SourceAssets/Castle/Banner.fbx: de2c6b971ce0b739d2a6fa0bdecc2614

@@ -2,7 +2,7 @@
 Id: 45964b11-70b2-4f51-a2ac-4cc036ed15e0
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../../../../Users/gontc/Downloads/FBX/Simpletower.fbx
+Source: !file ../../SourceAssets/Castle/Simpletower.fbx
 Skeleton: f54c9860-fbc0-47c3-a7a4-0429487e3a33:Models/Simpletower Skeleton
 PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
 Materials:
@@ -12,4 +12,4 @@ Materials:
             Material: 4e850f7e-caa4-4ad1-8cec-20730212fa0d:Models/LightRock_3
 Modifiers: {}
 ~SourceHashes:
-    b91064f8b686c4cd520d11b3fd27ad7f~../../../../../Users/gontc/Downloads/FBX/Simpletower.fbx: c18a16dcf2ac8c45cdddf41fd9b6d947
+    b91064f8b686c4cd520d11b3fd27ad7f~../../SourceAssets/Castle/Simpletower.fbx: c18a16dcf2ac8c45cdddf41fd9b6d947
