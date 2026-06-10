@@ -17,7 +17,9 @@ CastleDevelopment.sln
 │  ├─ Entities/        # Tree, Stockpile, ConstructionSite
 │  ├─ Workers/         # Worker + reusable behavior steps (GoTo/Work/Action)
 │  └─ Simulation.cs    # world + fixed-timestep tick + job board (game-ai/job-system.md)
-└─ Castle.Sim.Demo/    # headless console demo proving the worker/economy loop
+├─ Castle.Sim.Demo/    # headless console demo proving the worker/economy loop
+├─ Castle.Game/        # Stride game package: scene assets + CastleSimRenderer bridge
+└─ Castle.Windows/     # Stride Windows executable entry point
 ```
 
 This separation is deliberate (see the `game-engine-architecture`, `game-ai`,
@@ -42,7 +44,7 @@ the SDK system-wide from https://dotnet.microsoft.com/download.)
 
 ```powershell
 $env:PATH = "$env:USERPROFILE\.dotnet;$env:PATH"
-cd C:\git\castle_development
+cd C:\git\castle_construction
 dotnet run --project Castle.Sim.Demo -c Release
 ```
 
@@ -69,28 +71,23 @@ site · `#` completed building · `a/b/c` workers.
 This is the foundation for the production chains, building tech tree, and
 defense systems described in the `medieval-castles` skill.
 
-## Next step: add the Stride 3D renderer (manual, in Game Studio)
+## Run the 3D game (Stride)
 
-Stride's normal workflow uses the **Stride Game Studio** GUI (to set up scenes,
-terrain, camera, assets), which can't be scripted by an agent. Do this once:
+The Stride renderer lives in `Castle.Game` (package + `CastleSimRenderer`
+bridge script) and `Castle.Windows` (executable). Build and run:
 
-1. **Install Stride.** Get the Stride launcher from https://www.stride3d.net/ and
-   install Stride + Game Studio (it requires the .NET SDK and the Visual Studio
-   build tools / workloads it prompts for).
-2. **Create a new game** in Game Studio (e.g. `Castle.Game`), saved inside this
-   folder so it joins the solution.
-3. **Reference the sim core:** add a project reference from `Castle.Game` to
-   `Castle.Sim/Castle.Sim.csproj` (right-click Dependencies → Add → Project
-   Reference, or `dotnet add Castle.Game reference Castle.Sim/Castle.Sim.csproj`).
-4. **Wire it up** with a thin bridge (no game rules in the engine layer):
-   - On startup, build a `Simulation` (as the demo does) and store it in a script.
-   - In an `Update` sync script, call `sim.Tick((float)gameTime.Elapsed.TotalSeconds)`.
-   - Each frame, map sim state to entities: spawn/position a model per `Worker`
-     at its `Cell` (×tile size), instance tree models for non-depleted `Tree`s,
-     and show the `ConstructionSite` scaling with `Progress`.
-   - Add a first-person camera + character controller for the player.
+```powershell
+$env:PATH = "$env:USERPROFILE\.dotnet;$env:PATH"   # needs .NET 10 SDK
+dotnet build CastleDevelopment.sln -c Release
+& "Bin\Windows\Release\win-x64\Castle.Windows.exe"
+```
 
-Slice 1 ("a walkable 3D location") then becomes: render the terrain grid as a
-ground plane/heightmap, place the trees and the site, drop in the FP controller,
-and let the existing simulation drive the workers. The hard logic is already done
-and tested here.
+Editing scenes/assets is done in **Stride Game Studio**: open
+**`CastleDevelopment.sln`** via the Stride launcher (NOT the bare
+`Castle.Game.sdpkg` — opening the package alone loads no `Castle.Windows`
+executable, and Run fails with "Platform Windows is not supported"). The bridge keeps all
+game rules in `Castle.Sim`; the Stride layer only renders sim state: coloured
+boxes for workers/trees, the Keep grows with build `Progress`, and a free-fly
+camera (WASD + RMB-look, Q/E up/down, Shift to speed up).
+
+Current state and next steps are tracked in [ROADMAP.md](ROADMAP.md).

@@ -12,11 +12,15 @@ public interface IStep
 
 public sealed class GoToStep : IStep
 {
+    // If a worker is blocked by another worker for this long, replan around the jam.
+    private const float StuckLimit = 0.6f;
+
     private readonly Cell _target;
     private readonly bool _adjacent;
     private List<Cell>? _path;
     private int _index;
     private bool _planned;
+    private float _waitTime;
 
     private GoToStep(Cell target, bool adjacent)
     {
@@ -32,10 +36,7 @@ public sealed class GoToStep : IStep
         if (!_planned)
         {
             _planned = true;
-            _path = _adjacent
-                ? AStar.FindAdjacentTo(sim.Map, worker.Cell, _target)
-                : AStar.FindTo(sim.Map, worker.Cell, _target);
-            if (_path == null)
+            if (!Plan(worker, sim, avoidWorkers: false))
                 return StepStatus.Failed;
         }
 
@@ -45,12 +46,43 @@ public sealed class GoToStep : IStep
         worker.MoveAccumulator += worker.Speed * dt;
         while (worker.MoveAccumulator >= 1f && _index < _path.Count)
         {
-            worker.Cell = _path[_index];
+            var next = _path[_index];
+
+            // Worker–worker collision: don't step onto a cell another worker holds.
+            if (sim.IsCellOccupied(worker, next))
+            {
+                worker.MoveAccumulator = System.Math.Min(worker.MoveAccumulator, 1f);
+                _waitTime += dt;
+                if (_waitTime >= StuckLimit)
+                {
+                    _waitTime = 0f;
+                    // Reroute around currently occupied cells; if that fails, keep waiting
+                    // (don't fail the job — that would drop a carried load). The blocker usually moves.
+                    Plan(worker, sim, avoidWorkers: true);
+                }
+                break;
+            }
+
+            worker.Cell = next;
             _index++;
             worker.MoveAccumulator -= 1f;
+            _waitTime = 0f;
         }
 
         return _index >= _path.Count ? StepStatus.Done : StepStatus.Running;
+    }
+
+    private bool Plan(Worker worker, Simulation sim, bool avoidWorkers)
+    {
+        var avoid = avoidWorkers ? new HashSet<Cell>(sim.OccupiedCells(worker)) : null;
+        var path = _adjacent
+            ? AStar.FindAdjacentTo(sim.Map, worker.Cell, _target, avoid)
+            : AStar.FindTo(sim.Map, worker.Cell, _target, avoid);
+        if (path == null)
+            return false;
+        _path = path;
+        _index = 0;
+        return true;
     }
 }
 

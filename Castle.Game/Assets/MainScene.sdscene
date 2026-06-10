@@ -1,0 +1,22 @@
+!SceneAsset
+Id: 4e4de75c-e4d5-4e1a-9368-e207b2b21340
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+ChildrenIds: []
+Offset: {X: 0.0, Y: 0.0, Z: 0.0}
+Hierarchy:
+    RootParts:
+        - ref!! f4a945a8-4937-404c-8327-63dea5af0c61
+    Parts:
+        -   Entity:
+                Id: f4a945a8-4937-404c-8327-63dea5af0c61
+                Name: Sim
+                Components:
+                    f52df97833909439430e7fa936d2e6f0: !TransformComponent
+                        Id: 11068c1c-c5bc-4ffa-9149-b5922d5a17d2
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    ac551f2458e00cec8a726613783d1e56: !Castle.Game.CastleSimRenderer,Castle.Game
+                        Id: 7591fa86-d037-4579-aa80-1a742295be6e

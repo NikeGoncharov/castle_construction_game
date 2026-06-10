@@ -1,18 +1,16 @@
-﻿using Castle.Sim;
-using Castle.Sim.Entities;
+using Castle.Sim;
 using Castle.Sim.Geometry;
 using Castle.Sim.Resources;
-using Castle.Sim.Workers;
 using Castle.Sim.World;
 
 var sim = Scenarios.ForestKeep();
 var keep = sim.Sites[0];
 
-Console.WriteLine("Castle.Sim demo — workers chop the forest and build the Keep.");
-Console.WriteLine("Legend: . field  , forest  T tree  S stockpile  B building  # done  a/b/c worker\n");
+Console.WriteLine("Castle.Sim demo — workers chop the forest, mine stone, and build the Keep.");
+Console.WriteLine("Legend: . field  , forest  T tree  Q quarry  S stockpile  B site  # done  a..f worker\n");
 
 const float dt = 0.1f;
-const int maxSteps = 6000;
+const int maxSteps = 12000;
 int step = 0;
 
 Render(sim, step, dt);
@@ -28,8 +26,10 @@ Render(sim, step, dt);
 
 if (sim.AllSitesComplete)
 {
-    Console.WriteLine($"\nSUCCESS: Keep built in {sim.Time:0.0}s of simulated time " +
-                      $"({step} ticks). Wood delivered: {keep.Outstanding(ResourceKind.Wood) == 0}.");
+    bool wood = keep.Outstanding(ResourceKind.Wood) == 0;
+    bool stone = keep.Outstanding(ResourceKind.Stone) == 0;
+    Console.WriteLine($"\nSUCCESS: Keep built in {sim.Time:0.0}s of simulated time ({step} ticks). " +
+                      $"Wood delivered: {wood}, stone delivered: {stone}.");
     return 0;
 }
 
@@ -55,6 +55,8 @@ static void Render(Simulation sim, int step, float dt)
 
     foreach (var t in sim.Trees)
         if (!t.Depleted) grid[t.Cell.Y][t.Cell.X] = 'T';
+    foreach (var q in sim.Quarries)
+        grid[q.Cell.Y][q.Cell.X] = 'Q';
     foreach (var s in sim.Stockpiles)
         grid[s.Cell.Y][s.Cell.X] = 'S';
     foreach (var site in sim.Sites)
@@ -68,9 +70,11 @@ static void Render(Simulation sim, int step, float dt)
     for (int y = 0; y < map.Height; y++)
         Console.WriteLine(new string(grid[y]));
 
-    Console.WriteLine($"Keep: wood needed {sim.Sites[0].Outstanding(ResourceKind.Wood)}, " +
-                      $"build {sim.Sites[0].Progress * 100:0}%   |   " +
-                      string.Join("  ", sim.Workers.Select(w =>
-                          $"{w.Name}:{w.Activity}{(w.Carry is { } c ? $"+{c.Amount}w" : "")}")));
+    var keep = sim.Sites[0];
+    Console.WriteLine($"Keep: wood {keep.Outstanding(ResourceKind.Wood)} left, " +
+                      $"stone {keep.Outstanding(ResourceKind.Stone)} left, " +
+                      $"build {keep.Progress * 100:0}%");
+    Console.WriteLine("  " + string.Join("  ", sim.Workers.Select(w =>
+        $"{w.Name}:{w.Activity}{(w.Carry is { } c ? $"+{c.Amount}{c.Kind.ToString()[0]}" : "")}")));
     Console.WriteLine();
 }

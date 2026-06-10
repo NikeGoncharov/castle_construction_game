@@ -1,0 +1,19 @@
+# Build output
+[Bb]in/
+obj/
+Cache/
+
+# User/IDE state
+*.user
+*.lock
+*.lock.json
+.vs/
+_ReSharper*
+*.suo
+*.VC.db
+*.vshost.exe
+*.sdf
+
+# Stride template ignores *.manifest, but Castle.Windows needs app.manifest in git
+*.manifest
+!app.manifest

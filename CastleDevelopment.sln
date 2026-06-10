@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Castle.Sim", "Castle.Sim\Ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Castle.Sim.Demo", "Castle.Sim.Demo\Castle.Sim.Demo.csproj", "{253D3A76-2053-4C3B-8696-233603A3C164}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Castle.Game", "Castle.Game\Castle.Game.csproj", "{67229FAE-50C9-4376-9C62-7942775C37D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Castle.Windows", "Castle.Windows\Castle.Windows.csproj", "{BC2E1ED4-7525-4BBD-983D-AFB20B77AEFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{253D3A76-2053-4C3B-8696-233603A3C164}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{253D3A76-2053-4C3B-8696-233603A3C164}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{253D3A76-2053-4C3B-8696-233603A3C164}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67229FAE-50C9-4376-9C62-7942775C37D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67229FAE-50C9-4376-9C62-7942775C37D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67229FAE-50C9-4376-9C62-7942775C37D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67229FAE-50C9-4376-9C62-7942775C37D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC2E1ED4-7525-4BBD-983D-AFB20B77AEFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC2E1ED4-7525-4BBD-983D-AFB20B77AEFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC2E1ED4-7525-4BBD-983D-AFB20B77AEFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC2E1ED4-7525-4BBD-983D-AFB20B77AEFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

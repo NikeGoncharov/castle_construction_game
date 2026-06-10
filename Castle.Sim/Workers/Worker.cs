@@ -15,6 +15,7 @@ public sealed class Worker
 
     public string Name { get; }
     public Cell Cell { get; set; }
+    public Cell HomeCell { get; }            // idle rally spot, so finished workers clear the work area
     public float Speed { get; }              // cells per second
     public float MoveAccumulator { get; set; }
 
@@ -29,6 +30,7 @@ public sealed class Worker
     {
         Name = name;
         Cell = cell;
+        HomeCell = cell;
         Speed = speed;
         SlotIndex = slotIndex;
     }

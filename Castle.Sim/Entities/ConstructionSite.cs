@@ -13,6 +13,7 @@ public sealed class ConstructionSite
 {
     private readonly Dictionary<ResourceKind, int> _required;
     private readonly Dictionary<ResourceKind, int> _delivered = new();
+    private readonly Dictionary<ResourceKind, int> _incoming = new();   // reserved by workers en route
 
     public Cell Cell { get; }
     public string Name { get; }
@@ -45,6 +46,30 @@ public sealed class ConstructionSite
         _required.TryGetValue(kind, out int need);
         _delivered.TryGetValue(kind, out int have);
         return System.Math.Max(0, need - have);
+    }
+
+    /// <summary>Mark <paramref name="amount"/> of a resource as on its way (a worker was dispatched to fetch it).</summary>
+    public void ReserveIncoming(ResourceKind kind, int amount)
+    {
+        _incoming.TryGetValue(kind, out int current);
+        _incoming[kind] = current + amount;
+    }
+
+    /// <summary>Cancel an incoming reservation when the job finishes or aborts.</summary>
+    public void ReleaseIncoming(ResourceKind kind, int amount)
+    {
+        _incoming.TryGetValue(kind, out int current);
+        _incoming[kind] = System.Math.Max(0, current - amount);
+    }
+
+    /// <summary>What still needs to be fetched: required minus delivered minus already en route.
+    /// Drives load-balancing so workers don't all chase the same resource.</summary>
+    public int Remaining(ResourceKind kind)
+    {
+        _required.TryGetValue(kind, out int need);
+        _delivered.TryGetValue(kind, out int have);
+        _incoming.TryGetValue(kind, out int inc);
+        return System.Math.Max(0, need - have - inc);
     }
 
     public IEnumerable<ResourceKind> RequiredKinds => _required.Keys;
