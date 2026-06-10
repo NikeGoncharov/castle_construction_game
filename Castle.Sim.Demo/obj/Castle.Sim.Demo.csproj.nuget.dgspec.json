@@ -1,0 +1,134 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\git\\castle_development\\Castle.Sim.Demo\\Castle.Sim.Demo.csproj": {}
+  },
+  "projects": {
+    "C:\\git\\castle_development\\Castle.Sim.Demo\\Castle.Sim.Demo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\git\\castle_development\\Castle.Sim.Demo\\Castle.Sim.Demo.csproj",
+        "projectName": "Castle.Sim.Demo",
+        "projectPath": "C:\\git\\castle_development\\Castle.Sim.Demo\\Castle.Sim.Demo.csproj",
+        "packagesPath": "C:\\Users\\gontc\\.nuget\\packages\\",
+        "outputPath": "C:\\git\\castle_development\\Castle.Sim.Demo\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gontc\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "framework": "net8.0",
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\git\\castle_development\\Castle.Sim\\Castle.Sim.csproj": {
+                "projectPath": "C:\\git\\castle_development\\Castle.Sim\\Castle.Sim.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\gontc\\.dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\git\\castle_development\\Castle.Sim\\Castle.Sim.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\git\\castle_development\\Castle.Sim\\Castle.Sim.csproj",
+        "projectName": "Castle.Sim",
+        "projectPath": "C:\\git\\castle_development\\Castle.Sim\\Castle.Sim.csproj",
+        "packagesPath": "C:\\Users\\gontc\\.nuget\\packages\\",
+        "outputPath": "C:\\git\\castle_development\\Castle.Sim\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gontc\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "framework": "net8.0",
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "framework": "net8.0",
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\gontc\\.dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

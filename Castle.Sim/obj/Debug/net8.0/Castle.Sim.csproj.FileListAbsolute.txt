@@ -1,0 +1,11 @@
+C:\git\castle_development\Castle.Sim\bin\Debug\net8.0\Castle.Sim.deps.json
+C:\git\castle_development\Castle.Sim\bin\Debug\net8.0\Castle.Sim.dll
+C:\git\castle_development\Castle.Sim\bin\Debug\net8.0\Castle.Sim.pdb
+C:\git\castle_development\Castle.Sim\obj\Debug\net8.0\Castle.Sim.GeneratedMSBuildEditorConfig.editorconfig
+C:\git\castle_development\Castle.Sim\obj\Debug\net8.0\Castle.Sim.AssemblyInfoInputs.cache
+C:\git\castle_development\Castle.Sim\obj\Debug\net8.0\Castle.Sim.AssemblyInfo.cs
+C:\git\castle_development\Castle.Sim\obj\Debug\net8.0\Castle.Sim.csproj.CoreCompileInputs.cache
+C:\git\castle_development\Castle.Sim\obj\Debug\net8.0\Castle.Sim.dll
+C:\git\castle_development\Castle.Sim\obj\Debug\net8.0\refint\Castle.Sim.dll
+C:\git\castle_development\Castle.Sim\obj\Debug\net8.0\Castle.Sim.pdb
+C:\git\castle_development\Castle.Sim\obj\Debug\net8.0\ref\Castle.Sim.dll
