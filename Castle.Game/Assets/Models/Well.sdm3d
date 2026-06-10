@@ -1,0 +1,15 @@
+!Model
+Id: 99925300-a9fd-4722-8db4-8188a8ebe769
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/FBX/Well.fbx
+Skeleton: 217b08cf-a701-4ce3-b097-d6c0a92e20a6:Models/Well Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    b52b3693302d41ad7a7f5d19a7b8e3b2:
+        Name: LightRock
+        MaterialInstance:
+            Material: 8ff8fba5-7bfa-4358-a40c-98d2c69dc9f7:Models/LightRock_15
+Modifiers: {}
+~SourceHashes:
+    07d098d930f5ac209c9ff0e7498c0ee4~../../../../../Users/gontc/Downloads/FBX/Well.fbx: 416e42d5e1f8bac7542f2aa08423bd36

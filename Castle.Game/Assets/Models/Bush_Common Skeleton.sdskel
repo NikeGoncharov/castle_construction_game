@@ -1,0 +1,10 @@
+!Skeleton
+Id: b94fac84-cfce-46fe-a9fb-4abcb406e27d
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Bush_Common.gltf
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    cb4410941e026aa8d442c8b9d74b3089: {Name: Bush_Common, Depth: 0}
+~SourceHashes:
+    3079f0ddd18d42570b4ab822c001652c~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Bush_Common.gltf: 286d27fef6ef38889a330caac9e95bec

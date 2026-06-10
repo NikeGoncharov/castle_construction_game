@@ -8,9 +8,10 @@ namespace Castle.Sim;
 
 public static class Scenarios
 {
-    /// <summary>Flat field on the left, a forested hill on the right, and a small stone
-    /// quarry on the field. A crew of workers chops wood and mines stone to raise the Keep.</summary>
-    public static Simulation ForestKeep(int width = 28, int height = 14)
+    /// <summary>A wide field that slopes gently up to a forested rise on the right, with a
+    /// stone quarry off in the far part of the map. A crew chops wood and mines stone to
+    /// raise the Keep.</summary>
+    public static Simulation ForestKeep(int width = 56, int height = 28)
     {
         var map = new GridMap(width, height, TileType.Grass);
         var sim = new Simulation(map)
@@ -22,13 +23,14 @@ public static class Scenarios
             DepositSeconds = 0.3f,
         };
 
-        // Forest on the right half (this is the hill in the 3D renderer).
+        // Forest on the right half. Trees are scattered (~32% of cells) rather than a solid
+        // checkerboard, so the player can actually stroll between them.
         int forestStart = width / 2;
         for (int x = forestStart; x < width - 1; x++)
         for (int y = 1; y < height - 1; y++)
         {
             map.SetTerrain(new Cell(x, y), TileType.Forest);
-            if ((x + y) % 2 != 0)
+            if (Hash(x, y) % 100 >= 32)
                 continue;
 
             var cell = new Cell(x, y);
@@ -36,18 +38,18 @@ public static class Scenarios
             sim.Trees.Add(new Tree(cell, wood: sim.TreeYield));
         }
 
-        // A small quarry on the field — two rock cells so two miners can work at once.
-        foreach (var qCell in new[] { new Cell(5, 9), new Cell(5, 10) })
+        // Quarry out in the far (lower) part of the map, a real walk from the spawn.
+        foreach (var qCell in new[] { new Cell(24, 24), new Cell(25, 24) })
         {
             map.SetTerrain(qCell, TileType.Rock);
             map.SetBlocked(qCell, true);
             sim.Quarries.Add(new Quarry(qCell, sim.QuarryYield));
         }
 
-        sim.Stockpiles.Add(new Stockpile(new Cell(4, 4)));
+        sim.Stockpiles.Add(new Stockpile(new Cell(10, 10)));
 
         var keep = new ConstructionSite(
-            new Cell(7, 7), "Keep",
+            new Cell(14, 14), "Keep",
             required: new Dictionary<ResourceKind, int>
             {
                 [ResourceKind.Wood] = 12,
@@ -59,8 +61,18 @@ public static class Scenarios
 
         string[] names = { "Aldric", "Brom", "Cedric", "Dunstan", "Edric", "Fulk" };
         for (int i = 0; i < names.Length; i++)
-            sim.Workers.Add(new Worker(names[i], new Cell(2, 2 + i * 2), slotIndex: i));
+            sim.Workers.Add(new Worker(names[i], new Cell(2, 4 + i * 3), slotIndex: i));
 
         return sim;
+    }
+
+    // Deterministic per-cell hash (matches the renderer's, so layout is stable across runs).
+    private static int Hash(int x, int y)
+    {
+        unchecked
+        {
+            int h = (x * 73856093) ^ (y * 19349663);
+            return h & 0x7fffffff;
+        }
     }
 }

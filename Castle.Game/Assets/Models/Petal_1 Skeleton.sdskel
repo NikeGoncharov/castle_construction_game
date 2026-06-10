@@ -1,0 +1,10 @@
+!Skeleton
+Id: a25322ae-79f5-43d3-92ab-50be52d0d7ca
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Petal_1.gltf
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    d86070cc804173a122acc1df5f3e3718: {Name: Petal_1, Depth: 0}
+~SourceHashes:
+    9624df5ca96421b42e2ae0ebbd9f2e17~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Petal_1.gltf: 0c4bb09b8f928815fe4e8757f54f0d00

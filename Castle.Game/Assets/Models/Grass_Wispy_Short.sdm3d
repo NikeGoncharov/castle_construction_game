@@ -1,0 +1,16 @@
+!Model
+Id: 0d9b2406-62e2-456e-a251-10bb9480591a
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Grass_Wispy_Short.gltf
+Skeleton: e717cbfa-6ec5-4424-b82f-c3de6b8790fa:Models/Grass_Wispy_Short Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    939241eac360aed1fec9020d2f8b933c:
+        Name: Grass
+        MaterialInstance:
+            Material: 85620ada-fdca-4c3b-8b9f-d716402fbdb7:Models/Grass_6
+Modifiers: {}
+~SourceHashes:
+    ? e9628b786ee86ba0050db9595987d51e~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Grass_Wispy_Short.gltf
+    : 215948eb4390714e1a9e30d8247d30d2

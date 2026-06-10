@@ -1,0 +1,11 @@
+!Skeleton
+Id: b63956b9-f273-4fa8-ae10-24285a02abe7
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/FBX/WallEntranceBricks.fbx
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    a5214a172acbb83d2dfbcb0744a231e1: {Name: RootNode, Depth: 0}
+    6044ae5401ef8cd4e7fb2f83074a48a6: {Name: WallEntranceBricks, Depth: 1}
+~SourceHashes:
+    ae17381f36a950face3ab95d251cdc8e~../../../../../Users/gontc/Downloads/FBX/WallEntranceBricks.fbx: d8da3efa81a58d415c56cfc484fe802e

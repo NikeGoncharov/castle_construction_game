@@ -1,0 +1,15 @@
+!Model
+Id: 26669948-8cb8-40a2-ae89-463d99279f38
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Pebble_Round_4.gltf
+Skeleton: 0759894b-78bf-4c88-9516-b3c346d67916:Models/Pebble_Round_4 Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    faa915a1c6c2794a0792ef9c4b0215a1:
+        Name: PathRocks
+        MaterialInstance:
+            Material: 8a99178a-74ae-45fe-a552-d50faeed5b6f:Models/PathRocks_4
+Modifiers: {}
+~SourceHashes:
+    c436a2dcbe790db64d88200e4e4395e9~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Pebble_Round_4.gltf: 4afd7f3787a4d54481361df360b3c83c

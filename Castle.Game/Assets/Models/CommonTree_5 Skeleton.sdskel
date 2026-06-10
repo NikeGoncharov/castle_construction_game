@@ -1,0 +1,10 @@
+!Skeleton
+Id: aebb1cd8-4790-45cf-ad73-8f8fe0e67d97
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/CommonTree_5.gltf
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    fc069fe4e0da264a8565ab87ed14c9d5: {Name: CommonTree_5, Depth: 0}
+~SourceHashes:
+    73a0b6af02e463538c32698080113f70~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/CommonTree_5.gltf: 183afac4c8ac2e9ad1e46a9fc6e185c7

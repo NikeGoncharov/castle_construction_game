@@ -1,0 +1,15 @@
+!Model
+Id: aea070de-ab00-4d46-95a1-502e16f5c21c
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/FBX/TallWall.fbx
+Skeleton: 457057f3-7964-4723-a223-5b2c5e5f79c4:Models/TallWall Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    2e88fbadd20b54950fbb32c8c273b9ba:
+        Name: LightRock
+        MaterialInstance:
+            Material: 6bf53d4a-7d6e-4564-9ec7-23982c74a70d:Models/LightRock_7
+Modifiers: {}
+~SourceHashes:
+    964263b7b3f688f5806fcae8ebb8ca9e~../../../../../Users/gontc/Downloads/FBX/TallWall.fbx: a244cf6aec2a6cc417191ea497c7288e

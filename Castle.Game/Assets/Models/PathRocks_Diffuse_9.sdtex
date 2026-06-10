@@ -1,0 +1,8 @@
+!Texture
+Id: 16fa4343-09f5-4a22-ac59-1a05fe8c2ca4
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/PathRocks_Diffuse.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+    PremultiplyAlpha: false

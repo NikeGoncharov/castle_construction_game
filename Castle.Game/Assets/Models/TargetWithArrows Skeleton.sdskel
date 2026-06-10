@@ -1,0 +1,11 @@
+!Skeleton
+Id: 115a52e2-a74a-4716-a327-720ccc03d988
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/FBX/TargetWithArrows.fbx
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    270b5227426d0e0f3cbab763ad2410e9: {Name: RootNode, Depth: 0}
+    dd74e0dbc20d8327b9d732c7b87cfef9: {Name: Target, Depth: 1}
+~SourceHashes:
+    b672642d8d2aae39ca518c55f3c45954~../../../../../Users/gontc/Downloads/FBX/TargetWithArrows.fbx: 92faa69ccdea3779a0d0418af22e55dc

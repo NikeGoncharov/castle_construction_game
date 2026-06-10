@@ -1,0 +1,15 @@
+!Model
+Id: 8284f220-2f56-4877-8deb-bbe370aa6bbf
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/FBX/TallWallEntrance.fbx
+Skeleton: d990bc3f-0044-43cc-a33b-b4a763fef55c:Models/TallWallEntrance Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    759ccd0619f13b54fb932c798d781882:
+        Name: LightRock
+        MaterialInstance:
+            Material: 03d774f5-d056-4559-9c3d-684ff7dba070:Models/LightRock_9
+Modifiers: {}
+~SourceHashes:
+    b923c1098755d666009281014f112a32~../../../../../Users/gontc/Downloads/FBX/TallWallEntrance.fbx: 341b24bf1f6f0f6110fc62a09aecc9d1

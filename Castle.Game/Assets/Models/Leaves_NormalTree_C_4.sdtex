@@ -1,0 +1,8 @@
+!Texture
+Id: 6c1e2bf8-bd31-41ba-a6d6-63ed518aaa97
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Leaves_NormalTree_C.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+    PremultiplyAlpha: false

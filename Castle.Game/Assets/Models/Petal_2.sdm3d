@@ -1,0 +1,15 @@
+!Model
+Id: 85de81a8-dd87-4834-b95a-c5963d97b50e
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Petal_2.gltf
+Skeleton: 3a968119-36dc-4b61-8ab7-e64d480b27f7:Models/Petal_2 Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    68ad43aaafb1e92681e39cfae8dab7d8:
+        Name: Flowers
+        MaterialInstance:
+            Material: 5b008e35-3329-459a-a218-96152462c8a7:Models/Flowers_12
+Modifiers: {}
+~SourceHashes:
+    6b85dd05c37c205a28a08ef93e61d11b~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Petal_2.gltf: 498d0245014645eabc6ad10d48b99927

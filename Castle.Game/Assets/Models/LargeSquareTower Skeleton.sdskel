@@ -1,0 +1,11 @@
+!Skeleton
+Id: c0f935ec-d7d0-4c0a-81b7-ff07780ff8ed
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/FBX/LargeSquareTower.fbx
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    bc3392a02f877ed3a761e45e2b1672b4: {Name: RootNode, Depth: 0}
+    f17e1775f9b787cc0a690c25a898eab2: {Name: LargeSquareTower, Depth: 1}
+~SourceHashes:
+    341f39dc2e8bfd8029356fc15ed788df~../../../../../Users/gontc/Downloads/FBX/LargeSquareTower.fbx: 26bae11a7fe87768b60ac8be4cf1827a

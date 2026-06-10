@@ -1,0 +1,15 @@
+!Model
+Id: d2763fa7-c24e-4795-aabe-3119f9005cde
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/FBX/Tunnel.fbx
+Skeleton: 1a29e5a3-97f1-4973-8a2b-db63ef616297:Models/Tunnel Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    edf667beffbd03680cd8b83ca8a289c8:
+        Name: LightRock.001
+        MaterialInstance:
+            Material: 237854e9-ce6c-4e0d-81c8-00a444e69c79:Models/LightRock.001_4
+Modifiers: {}
+~SourceHashes:
+    36749205f16d785b9a2b0d7c403b3242~../../../../../Users/gontc/Downloads/FBX/Tunnel.fbx: c62b1dcd7047193ba5b04cc555dad42c

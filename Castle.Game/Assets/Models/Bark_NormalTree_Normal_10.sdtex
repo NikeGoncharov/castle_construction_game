@@ -1,0 +1,8 @@
+!Texture
+Id: f704f482-4bc7-4618-9394-0bd0326e8028
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Bark_NormalTree_Normal.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+    PremultiplyAlpha: false

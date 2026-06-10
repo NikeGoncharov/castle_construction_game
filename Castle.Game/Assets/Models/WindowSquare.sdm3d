@@ -1,0 +1,15 @@
+!Model
+Id: db5bdf2e-5b85-4787-ae0c-a1594ffe4d9b
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/FBX/WindowSquare.fbx
+Skeleton: 650647cb-75ab-4771-be92-723e99386227:Models/WindowSquare Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    590bc1711a9b27ca5e1ff5ad0ee0151f:
+        Name: DarkWood
+        MaterialInstance:
+            Material: 28516432-a665-4073-bda5-ce90cb8b710b:Models/DarkWood_3
+Modifiers: {}
+~SourceHashes:
+    5f2a2271187267c53e31700d145f30c8~../../../../../Users/gontc/Downloads/FBX/WindowSquare.fbx: 8e89212dc4934dbdc6572b0abbe411dc

@@ -1,0 +1,11 @@
+!Skeleton
+Id: f9e2d01c-8a75-4591-87f4-e74b59b3eae9
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/RockPath_Square_Thin.gltf
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    74c1fd05d405d39f41a21fb469ae240d: {Name: RockPath_Square_Thin, Depth: 0}
+~SourceHashes:
+    ? 82160c3263195784d040e3d346415781~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/RockPath_Square_Thin.gltf
+    : 9d73da249bea03fbc3e94f6d08f69a58

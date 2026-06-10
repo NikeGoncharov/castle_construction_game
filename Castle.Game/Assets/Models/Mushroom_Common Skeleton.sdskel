@@ -1,0 +1,11 @@
+!Skeleton
+Id: a0c97183-0aec-4f08-8e03-0edb01e0485b
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Mushroom_Common.gltf
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    a76b4d214f3a4076ae27f5b1672d5577: {Name: Mushroom_Common, Depth: 0}
+~SourceHashes:
+    ? 67f1c335ee4909859deda1c1333f98f6~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Mushroom_Common.gltf
+    : 7254deebea22e7dbc166d2dabc8b110b

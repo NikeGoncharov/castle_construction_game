@@ -1,0 +1,11 @@
+!Skeleton
+Id: 78e08015-a940-425e-b371-922430d4d15f
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/FBX/LargeSimpleTower.fbx
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    b2a5ee4081a417e13970bcf33b48ea6e: {Name: RootNode, Depth: 0}
+    6cff61255d7a960e19c13ee39fc8075c: {Name: LargeSimpleTower, Depth: 1}
+~SourceHashes:
+    1d7786e17448ce9e41e85833977c55ad~../../../../../Users/gontc/Downloads/FBX/LargeSimpleTower.fbx: a5e451f9b81098115169c8e702a607da

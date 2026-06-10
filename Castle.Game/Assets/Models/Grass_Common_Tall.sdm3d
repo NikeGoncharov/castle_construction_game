@@ -1,0 +1,16 @@
+!Model
+Id: 3f7c52a6-8e3b-4ded-9e4c-6e5ff676294b
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Grass_Common_Tall.gltf
+Skeleton: 53ffb281-0767-4418-b7ab-f3d7471e1917:Models/Grass_Common_Tall Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    6392f0146fd25020810c30d73e516f1d:
+        Name: Grass
+        MaterialInstance:
+            Material: ddb0e178-8ad9-41fa-9261-531b034f8455:Models/Grass_4
+Modifiers: {}
+~SourceHashes:
+    ? fe6cef15369a6375b71a42738e221fe3~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Grass_Common_Tall.gltf
+    : 8133f704f3c6017faeab9b7e016cf8c4

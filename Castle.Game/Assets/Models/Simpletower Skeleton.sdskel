@@ -1,0 +1,11 @@
+!Skeleton
+Id: f54c9860-fbc0-47c3-a7a4-0429487e3a33
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/FBX/Simpletower.fbx
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    e1016965ad7b3c905076a348169c4acc: {Name: RootNode, Depth: 0}
+    158a0dab92ea72bdc4014e38673b6b74: {Name: SimpleTower, Depth: 1}
+~SourceHashes:
+    a1210826d49d2b8c7871ae08f2f00c37~../../../../../Users/gontc/Downloads/FBX/Simpletower.fbx: c18a16dcf2ac8c45cdddf41fd9b6d947

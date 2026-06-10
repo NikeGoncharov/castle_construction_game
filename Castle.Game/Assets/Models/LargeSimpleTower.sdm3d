@@ -1,0 +1,15 @@
+!Model
+Id: b750fe8a-3c35-4a99-95aa-20efe2248c33
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/FBX/LargeSimpleTower.fbx
+Skeleton: 78e08015-a940-425e-b371-922430d4d15f:Models/LargeSimpleTower Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    603a82ff44e7ef7d3810456845f49dbb:
+        Name: LightRock
+        MaterialInstance:
+            Material: 1bca6719-7c5c-46ab-8c6d-9fdc7c6cfe7f:Models/LightRock
+Modifiers: {}
+~SourceHashes:
+    f05c1cf0ee31a1507721a86b9aab6226~../../../../../Users/gontc/Downloads/FBX/LargeSimpleTower.fbx: a5e451f9b81098115169c8e702a607da

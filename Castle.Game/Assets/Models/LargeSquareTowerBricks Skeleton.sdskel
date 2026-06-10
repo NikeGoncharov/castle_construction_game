@@ -1,0 +1,11 @@
+!Skeleton
+Id: 15d0257f-e942-45ee-aca2-6c9d8cf9e456
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/FBX/LargeSquareTowerBricks.fbx
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    773c58b0bee5e9b2a64a81eb6ed9aa5a: {Name: RootNode, Depth: 0}
+    0494673f7ee45e420e1d44f817a24b62: {Name: LargeSquareTowerBricks, Depth: 1}
+~SourceHashes:
+    dfb4721714ff0f68e500ee43cfe4c9bc~../../../../../Users/gontc/Downloads/FBX/LargeSquareTowerBricks.fbx: 2fc821bf41d2647ce49801881ab74f57

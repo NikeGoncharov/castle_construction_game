@@ -1,0 +1,15 @@
+!Model
+Id: 251349bb-5f5f-4fe3-b670-d16dc050512c
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/FBX/WallBricks.fbx
+Skeleton: e61a7412-622f-4364-843f-c5311916f331:Models/WallBricks Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    0b18c81f5067b49dd02fece6081030bb:
+        Name: LightRock
+        MaterialInstance:
+            Material: a0fc5d4d-fe9a-4c06-8d1b-db0c343a0657:Models/LightRock_12
+Modifiers: {}
+~SourceHashes:
+    936d62ff5261f30d4ecd969a22f45512~../../../../../Users/gontc/Downloads/FBX/WallBricks.fbx: 7ad2f18362794e09f82880a19c7ccc04

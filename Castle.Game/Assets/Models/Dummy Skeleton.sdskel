@@ -1,0 +1,11 @@
+!Skeleton
+Id: 39f61924-a0ea-4c80-8ffb-3a6273d60320
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/FBX/Dummy.fbx
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    3469ed1e0de408a09f22dae71dd79e5b: {Name: RootNode, Depth: 0}
+    b6954eeb569be0ef8f61f46c95938021: {Name: Dummy, Depth: 1}
+~SourceHashes:
+    787f2a0dc0ed8172a0621f68a35501a5~../../../../../Users/gontc/Downloads/FBX/Dummy.fbx: 442f7752e7ec8754fc1076295c56642a

@@ -1,0 +1,19 @@
+!Model
+Id: 1ab569b8-954c-4d4d-a60b-f64b4728f969
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/CommonTree_5.gltf
+Skeleton: aebb1cd8-4790-45cf-ad73-8f8fe0e67d97:Models/CommonTree_5 Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    0dd0c7e68837826e80de81098912914d:
+        Name: Bark_NormalTree
+        MaterialInstance:
+            Material: 36464424-3f5a-4f30-8565-0475e93659b9:Models/Bark_NormalTree_6
+    4ecc203d85c6d7cb458b1e7357339671:
+        Name: Leaves_NormalTree
+        MaterialInstance:
+            Material: 1d6c6e2e-9b4b-4255-a0bf-5420744683aa:Models/Leaves_NormalTree_3
+Modifiers: {}
+~SourceHashes:
+    4b2328b20ac81224a29257d10f073ff9~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/CommonTree_5.gltf: 183afac4c8ac2e9ad1e46a9fc6e185c7

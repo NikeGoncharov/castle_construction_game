@@ -1,0 +1,11 @@
+!Skeleton
+Id: 2556b183-5469-4e40-a494-04b643bda9ef
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/FBX/TallWallBricks.fbx
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    b0c67eb40af029861c1d2fbbef20f742: {Name: RootNode, Depth: 0}
+    51156d15d0dbf6013ce7f8d59952a7a8: {Name: TallWallBricks, Depth: 1}
+~SourceHashes:
+    e579bc98861977522689c32eeab82632~../../../../../Users/gontc/Downloads/FBX/TallWallBricks.fbx: cd7aa65a213b9742a4049a67171f09ac

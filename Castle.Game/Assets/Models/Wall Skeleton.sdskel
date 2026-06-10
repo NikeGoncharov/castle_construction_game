@@ -1,0 +1,11 @@
+!Skeleton
+Id: 7cda91c2-2c74-4c13-b176-1865e5709c26
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/FBX/Wall.fbx
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    4da9844c4a90e995576cfab58b041496: {Name: RootNode, Depth: 0}
+    7b3a282efc825b4733bf4121d9a35017: {Name: Wall, Depth: 1}
+~SourceHashes:
+    f78df8a8ed39936f04aa13b6fc9cccc8~../../../../../Users/gontc/Downloads/FBX/Wall.fbx: f2f5f972db6158819d7c07a0ad864b61

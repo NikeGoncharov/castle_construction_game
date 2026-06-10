@@ -1,0 +1,10 @@
+!Skeleton
+Id: 4b1e51ef-e5dd-4cfb-a785-fd161ea388bb
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/DeadTree_5.gltf
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    03bf5f044d754fd19f71f435ef3ea4bc: {Name: DeadTree_5, Depth: 0}
+~SourceHashes:
+    f5a21e1a376c3cced56478b28c48672f~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/DeadTree_5.gltf: 3bb3e48d240d8b965041604955f4fe38

@@ -1,0 +1,16 @@
+!Model
+Id: dd6e933b-81be-440a-96d5-d09afddfafd1
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/RockPath_Square_Thin.gltf
+Skeleton: f9e2d01c-8a75-4591-87f4-e74b59b3eae9:Models/RockPath_Square_Thin Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    f207a0df145168b466d4fec4fbba1d50:
+        Name: PathRocks
+        MaterialInstance:
+            Material: f76275ec-0d09-4360-9ad1-a031a87b0a88:Models/PathRocks_20
+Modifiers: {}
+~SourceHashes:
+    ? 02e3356b543d1e78829e2d15366ac8bd~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/RockPath_Square_Thin.gltf
+    : 9d73da249bea03fbc3e94f6d08f69a58

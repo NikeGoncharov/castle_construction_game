@@ -1,0 +1,11 @@
+!Skeleton
+Id: 11ed3fd2-efe4-4654-9bcb-189cfa20581d
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/RockPath_Round_Thin.gltf
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    c09e06e9c028eaed4e6cc5ded76c7534: {Name: RockPath_Round_Thin, Depth: 0}
+~SourceHashes:
+    ? c4440983488f54354c51ebbc663040ba~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/RockPath_Round_Thin.gltf
+    : 1cbd62c5ba0434a593c4772ab16c598f

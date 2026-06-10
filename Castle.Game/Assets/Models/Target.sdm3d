@@ -1,0 +1,15 @@
+!Model
+Id: 3c7c3469-6147-450d-b919-e17582bc7e4f
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/FBX/Target.fbx
+Skeleton: 3aab7a05-5a4a-4d04-a43f-6e83cff140f2:Models/Target Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    c370ca6eb96f1146e53aae4c0be454dc:
+        Name: White
+        MaterialInstance:
+            Material: 6020f752-ddce-4761-96c1-b826b4a54c8b:Models/White
+Modifiers: {}
+~SourceHashes:
+    5a21771ef8dfe70b8c332f282ef2fc28~../../../../../Users/gontc/Downloads/FBX/Target.fbx: 0a132bf01c05d3400bb137f796c71bc7

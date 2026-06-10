@@ -1,0 +1,11 @@
+!Skeleton
+Id: d2bb12bb-c35d-4aef-9412-942e4d45f192
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Mushroom_Laetiporus.gltf
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    e82735295f5e3fd2641a237eb079ac8b: {Name: Mushroom_Laetiporus, Depth: 0}
+~SourceHashes:
+    ? 48e499314a2cef51a64476c606c0623c~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Mushroom_Laetiporus.gltf
+    : 473310b4a7364bbe2516ba0de8c04e03

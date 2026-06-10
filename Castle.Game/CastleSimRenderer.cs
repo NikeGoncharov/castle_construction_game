@@ -5,6 +5,7 @@ using Castle.Sim.Entities;
 using Castle.Sim.Geometry;
 using Castle.Sim.Resources;
 using Castle.Sim.Workers;
+using Castle.Sim.World;
 using Stride.Core.Mathematics;
 using Stride.Engine;
 using Stride.Graphics;
@@ -30,22 +31,51 @@ public class CastleSimRenderer : SyncScript
     private const float SimStep = 0.1f;        // fixed simulation tick, 10 Hz
     private const float MaxFrameDt = 0.1f;     // clamp hitches so the sim isn't fast-forwarded
     private const int MaxStepsPerFrame = 3;    // backstop against a catch-up spiral
-    private const float HillHeight = 3.5f;
+    private const float HillHeight = 5.25f;
     private const float EyeHeight = 1.7f;
     private const float WalkSpeed = 5f;
     private const float RunMultiplier = 2f;
     private const float LookSpeed = 3f;
+
+    // --- Imported model wiring (Castle.Game/Assets/Models). Tune scales after seeing them. ---
+    private const string ModelDir = "Models/";
+    private const float TreeScale = 1f;
+    private const float RockScale = 1f;
+    private const float KeepScale = 5f;
+    private const float DecorScale = 1f;
+    private const string KeepModel = "LargeTower";   // shown once the Keep is complete
+
+    private static readonly string[] ForestTrees =
+    {
+        "CommonTree_1", "CommonTree_2", "CommonTree_3", "CommonTree_4", "CommonTree_5",
+    };
+    private static readonly string[] QuarryRocks = { "Rock_Medium_1", "Rock_Medium_2", "Rock_Medium_3" };
+    private static readonly string[] FieldDecor =
+    {
+        "Grass_Common_Short", "Grass_Common_Tall", "Grass_Wispy_Short", "Grass_Wispy_Tall",
+        "Clover_1", "Clover_2", "Flower_3_Group", "Flower_4_Group", "Bush_Common_Flowers",
+    };
+    private static readonly string[] ForestDecor =
+    {
+        "Fern_1", "Mushroom_Common", "Mushroom_Common", "Plant_1", "Plant_7",
+        "Grass_Wispy_Tall", "Pebble_Round_1",
+    };
+
+    // Flowers read better at half size (per art direction).
+    private static readonly HashSet<string> FlowerModels = new() { "Flower_3_Group", "Flower_4_Group" };
 
     private Simulation _sim = null!;
     private TerrainField _terrain = null!;
     private readonly Dictionary<Worker, Entity> _workerEntities = new();
     private readonly Dictionary<Tree, Entity> _treeEntities = new();
     private Entity _siteEntity = null!;
+    private bool _keepBuilt;
 
     private Entity _cameraEntity = null!;
     private float _yaw = -MathUtil.PiOverTwo;  // start facing the forest (+X)
     private float _pitch;
     private float _simAccumulator;
+    private float _workerGroundOffset = 0.6f;  // how high above ground a worker visual sits
 
     public override void Start()
     {
@@ -102,7 +132,7 @@ public class CastleSimRenderer : SyncScript
         if (SceneSystem.GraphicsCompositor?.Cameras.Count > 0)
             camera.Slot = SceneSystem.GraphicsCompositor.Cameras[0].ToSlotId();
         _cameraEntity.Add(camera);
-        _cameraEntity.Transform.Position = OnGround(new Cell(1, 4), EyeHeight);
+        _cameraEntity.Transform.Position = OnGround(new Cell(2, _sim.Map.Height / 2), EyeHeight);
         _cameraEntity.Transform.Rotation = Quaternion.RotationYawPitchRoll(_yaw, _pitch, 0f);
         scene.Entities.Add(_cameraEntity);
     }
@@ -113,39 +143,154 @@ public class CastleSimRenderer : SyncScript
 
         foreach (var tree in _sim.Trees)
         {
-            var e = new Entity($"Tree_{tree.Cell}") { new ModelComponent(MakeCubeModel(new Color(34, 90, 34))) };
-            e.Transform.Scale = new Vector3(0.7f, 2.2f, 0.7f);
-            e.Transform.Position = OnGround(tree.Cell, 1.1f);
+            var v = ResolveVisual(PickModelUrl(tree.Cell, ForestTrees), new Color(34, 90, 34),
+                cubeScale: new Vector3(0.7f, 2.2f, 0.7f), cubeHalfHeight: 1.1f, modelScale: TreeScale);
+            var e = new Entity($"Tree_{tree.Cell}") { new ModelComponent(v.Model) };
+            e.Transform.Scale = v.Scale;
+            e.Transform.Rotation = Quaternion.RotationY(YawFor(tree.Cell));
+            e.Transform.Position = OnGround(tree.Cell, v.GroundOffset);
             scene.Entities.Add(e);
             _treeEntities[tree] = e;
         }
 
         foreach (var quarry in _sim.Quarries)
         {
-            var e = new Entity($"Quarry_{quarry.Cell}") { new ModelComponent(MakeCubeModel(new Color(95, 95, 100))) };
-            e.Transform.Scale = new Vector3(1.5f, 0.8f, 1.5f);
-            e.Transform.Position = OnGround(quarry.Cell, 0.4f);
+            var v = ResolveVisual(PickModelUrl(quarry.Cell, QuarryRocks), new Color(95, 95, 100),
+                cubeScale: new Vector3(1.5f, 0.8f, 1.5f), cubeHalfHeight: 0.4f, modelScale: RockScale);
+            var e = new Entity($"Quarry_{quarry.Cell}") { new ModelComponent(v.Model) };
+            e.Transform.Scale = v.Scale;
+            e.Transform.Rotation = Quaternion.RotationY(YawFor(quarry.Cell));
+            e.Transform.Position = OnGround(quarry.Cell, v.GroundOffset);
             scene.Entities.Add(e);
         }
 
+        // The Keep grows as a stone cube while building, then becomes a real tower
+        // model on completion (swap handled in SyncEntities).
         _siteEntity = new Entity("Keep") { new ModelComponent(MakeCubeModel(new Color(150, 140, 120))) };
         _siteEntity.Transform.Position = OnGround(_sim.Sites[0].Cell, 0.1f);
         scene.Entities.Add(_siteEntity);
 
+        // Workers: no human models in the pack yet, so a capsule body + sphere head.
+        // Earthy, non-red tones (red capsules read oddly).
         var palette = new[]
         {
-            new Color(200, 70, 60), new Color(70, 110, 200), new Color(220, 150, 50),
-            new Color(90, 180, 90), new Color(180, 90, 190), new Color(210, 200, 80),
+            new Color(90, 110, 160), new Color(110, 140, 90), new Color(150, 120, 80),
+            new Color(120, 120, 130), new Color(170, 150, 90), new Color(100, 90, 120),
         };
+        _workerGroundOffset = 0f;   // composite worker root sits on the ground; height is in the children
         int i = 0;
         foreach (var worker in _sim.Workers)
         {
-            var e = new Entity($"Worker_{worker.Name}") { new ModelComponent(MakeCubeModel(palette[i++ % palette.Length])) };
-            e.Transform.Scale = new Vector3(0.7f, 1.2f, 0.7f);
-            e.Transform.Position = OnGround(worker.Cell, 0.6f);
+            var e = MakeWorkerEntity($"Worker_{worker.Name}", palette[i++ % palette.Length]);
+            e.Transform.Position = OnGround(worker.Cell, _workerGroundOffset);
             scene.Entities.Add(e);
             _workerEntities[worker] = e;
         }
+
+        ScatterDecor();
+    }
+
+    /// <summary>Per entity-type visual. If a model asset exists at <paramref name="modelUrl"/>
+    /// (imported via Game Studio), use it; otherwise fall back to the procedural cube so the
+    /// game keeps running. Importing a model makes that entity "light up" with no code change.
+    /// Real models are assumed to have their pivot at the base (ground offset 0) and a uniform
+    /// scale; cubes are centred (offset = half height) and use the legacy non-uniform scale.</summary>
+    private Visual ResolveVisual(string modelUrl, Color fallbackColor, Vector3 cubeScale, float cubeHalfHeight, float modelScale = 1f)
+    {
+        if (Content.Exists(modelUrl))
+            return new Visual(Content.Load<Model>(modelUrl), new Vector3(modelScale), 0f);
+        return new Visual(MakeCubeModel(fallbackColor), cubeScale, cubeHalfHeight);
+    }
+
+    private readonly record struct Visual(Model Model, Vector3 Scale, float GroundOffset);
+
+    private Model LoadModelOrNull(string url) => Content.Exists(url) ? Content.Load<Model>(url) : null;
+
+    /// <summary>Deterministically pick a model from a pool by cell, so the same cell always
+    /// looks the same but the map has variety.</summary>
+    private static string PickModelUrl(Cell c, string[] pool) => ModelDir + pool[Hash(c.X, c.Y) % pool.Length];
+
+    /// <summary>A stable per-cell yaw so trees/rocks aren't all facing the same way.</summary>
+    private static float YawFor(Cell c) => Hash(c.X * 3 + 1, c.Y * 5 + 2) % 360 * (MathUtil.Pi / 180f);
+
+    private static int Hash(int x, int y)
+    {
+        unchecked
+        {
+            int h = (x * 73856093) ^ (y * 19349663);
+            return h & 0x7fffffff;
+        }
+    }
+
+    /// <summary>A worker stand-in built from primitives: a capsule body + sphere head.</summary>
+    private Entity MakeWorkerEntity(string name, Color color)
+    {
+        var root = new Entity(name);
+
+        var body = new Entity("Body") { new ModelComponent(MakeCapsuleModel(color, length: 0.6f, radius: 0.3f)) };
+        body.Transform.Position = new Vector3(0f, 0.6f, 0f);   // capsule centre; its base touches the ground
+        root.AddChild(body);
+
+        var head = new Entity("Head") { new ModelComponent(MakeSphereModel(new Color(232, 200, 170), radius: 0.26f)) };
+        head.Transform.Position = new Vector3(0f, 1.32f, 0f);
+        root.AddChild(head);
+
+        return root;
+    }
+
+    /// <summary>Scatter non-interactive ground props (grass, flowers, mushrooms, pebbles) across
+    /// walkable cells, varied and offset by hash so they don't look gridded.</summary>
+    private void ScatterDecor()
+    {
+        var scene = Entity.Scene;
+        var map = _sim.Map;
+
+        for (int y = 0; y < map.Height; y++)
+        for (int x = 0; x < map.Width; x++)
+        {
+            var cell = new Cell(x, y);
+            if (!map.IsWalkable(cell))
+                continue;   // skip trees, quarry, keep — anything occupied
+
+            bool forest = map.GetTerrain(cell) == TileType.Forest;
+            int h = Hash(x * 2 + 7, y * 2 + 13);
+            if (h % 100 >= (forest ? 45 : 25))   // a bit sparser to keep the bigger map's prop count in check
+                continue;
+
+            var pool = forest ? ForestDecor : FieldDecor;
+            var modelName = pool[(h / 7) % pool.Length];
+            var model = LoadModelOrNull(ModelDir + modelName);
+            if (model == null)
+                continue;
+
+            float ox = (((h >> 3) % 100) / 100f - 0.5f) * Tile * 0.7f;
+            float oz = (((h >> 11) % 100) / 100f - 0.5f) * Tile * 0.7f;
+            float wx = x * Tile + Tile / 2f + ox;
+            float wz = y * Tile + Tile / 2f + oz;
+            float scale = DecorScale * (0.8f + (h % 40) / 100f);
+            if (FlowerModels.Contains(modelName))
+                scale *= 0.5f;
+
+            var e = new Entity($"Decor_{x}_{y}") { new ModelComponent(model) };
+            e.Transform.Position = new Vector3(wx, _terrain.HeightAt(wx, wz), wz);
+            e.Transform.Rotation = Quaternion.RotationY(h % 360 * (MathUtil.Pi / 180f));
+            e.Transform.Scale = new Vector3(scale);
+            scene.Entities.Add(e);
+        }
+    }
+
+    private Model MakeCapsuleModel(Color color, float length, float radius)
+    {
+        var generator = new CapsuleProceduralModel { Length = length, Radius = radius };
+        generator.MaterialInstance.Material = MakeMaterial(color, doubleSided: false);
+        return generator.Generate(Services);
+    }
+
+    private Model MakeSphereModel(Color color, float radius)
+    {
+        var generator = new SphereProceduralModel { Radius = radius };
+        generator.MaterialInstance.Material = MakeMaterial(color, doubleSided: false);
+        return generator.Generate(Services);
     }
 
     private void SyncEntities(float dt)
@@ -154,7 +299,7 @@ public class CastleSimRenderer : SyncScript
 
         foreach (var (worker, e) in _workerEntities)
         {
-            var target = OnGround(worker.Cell, 0.6f);
+            var target = OnGround(worker.Cell, _workerGroundOffset);
             e.Transform.Position = Vector3.Lerp(e.Transform.Position, target, lerp);
         }
 
@@ -166,13 +311,28 @@ public class CastleSimRenderer : SyncScript
         }
 
         var site = _sim.Sites[0];
-        float targetHeight = 0.4f + site.Progress * 4f;
-        var scale = _siteEntity.Transform.Scale;
-        scale.X = 1.6f;
-        scale.Z = 1.6f;
-        scale.Y = MathUtil.Lerp(scale.Y <= 0 ? targetHeight : scale.Y, targetHeight, lerp);
-        _siteEntity.Transform.Scale = scale;
-        _siteEntity.Transform.Position = OnGround(site.Cell, scale.Y / 2f);
+        if (site.Complete && !_keepBuilt)
+        {
+            _keepBuilt = true;
+            var tower = LoadModelOrNull(ModelDir + KeepModel);
+            if (tower != null)
+            {
+                _siteEntity.Get<ModelComponent>().Model = tower;
+                _siteEntity.Transform.Scale = new Vector3(KeepScale);
+                _siteEntity.Transform.Position = OnGround(site.Cell, 0f);
+            }
+        }
+
+        if (!_keepBuilt)
+        {
+            float targetHeight = 0.4f + site.Progress * 4f;
+            var scale = _siteEntity.Transform.Scale;
+            scale.X = 1.6f;
+            scale.Z = 1.6f;
+            scale.Y = MathUtil.Lerp(scale.Y <= 0 ? targetHeight : scale.Y, targetHeight, lerp);
+            _siteEntity.Transform.Scale = scale;
+            _siteEntity.Transform.Position = OnGround(site.Cell, scale.Y / 2f);
+        }
     }
 
     private void HandleWindowInput()
@@ -337,12 +497,10 @@ public sealed class TerrainField
 
     public float HeightAt(float x, float z)
     {
+        // A wide, monotonic slope rising toward the forest (+X). No crown across depth, so the
+        // ground only ever rises toward the forest border and never descends.
         float tx = MathUtil.Clamp(x / _worldW, 0f, 1f);
-        float tz = MathUtil.Clamp(z / _worldD, 0f, 1f);
-
-        float ramp = Smoothstep(0.30f, 0.95f, tx);          // rises toward the forest (+X)
-        float dome = 1f - (2f * tz - 1f) * (2f * tz - 1f);   // gentle crown across depth, 0 at edges
-        return _hillHeight * ramp * (0.75f + 0.25f * dome);
+        return _hillHeight * Smoothstep(0.05f, 1.0f, tx);
     }
 
     public Vector3 NormalAt(float x, float z)

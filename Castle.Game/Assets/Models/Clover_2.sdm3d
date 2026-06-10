@@ -1,0 +1,15 @@
+!Model
+Id: c0dc5885-22f4-4c74-9812-fe5ec1d47357
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Clover_2.gltf
+Skeleton: b03e57a8-d8c6-4bd7-9880-85b6ef2b8145:Models/Clover_2 Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    0442279bb9fbfd98a6708ddc7b044a07:
+        Name: Leaves
+        MaterialInstance:
+            Material: 603e5eaf-5ed0-4bb1-9b25-e65687012577:Models/Leaves_22
+Modifiers: {}
+~SourceHashes:
+    84c09028aa3aeab365bbd7a9a614383b~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Clover_2.gltf: 299c6cd62a47723093d110e8c0490459

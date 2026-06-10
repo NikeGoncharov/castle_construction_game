@@ -1,0 +1,10 @@
+!Skeleton
+Id: 9e154464-8abb-4211-8d41-0d0986e4dfde
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Fern_1.gltf
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    1f7ed64997d5e646e163c77a15cdbb2b: {Name: Fern_1, Depth: 0}
+~SourceHashes:
+    fae6a65c30c542d6097f02de090d8f62~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Fern_1.gltf: 4f581ece14aa101cd5a257c774a07b6b

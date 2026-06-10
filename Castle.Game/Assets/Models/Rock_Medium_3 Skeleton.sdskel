@@ -1,0 +1,10 @@
+!Skeleton
+Id: ce84f87c-1ada-44fb-aa5c-fa9f50350588
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Rock_Medium_3.gltf
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    06658d56730d61ee1c8e4a6cd540239a: {Name: Rock_Medium_3, Depth: 0}
+~SourceHashes:
+    3f3d6fe7e4d38942d1425b258813fd86~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Rock_Medium_3.gltf: 6650a3070825b08bfb4c7f27ed8df2f8

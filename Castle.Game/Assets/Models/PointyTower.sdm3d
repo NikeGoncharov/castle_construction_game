@@ -1,0 +1,15 @@
+!Model
+Id: 3cf24909-4770-4311-9f1d-eb4aff8dc0b9
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/FBX/PointyTower.fbx
+Skeleton: a58449d3-408f-4e82-b213-4284975e87e3:Models/PointyTower Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    f6d4ff1e82fcf366f1747f3710e78d6e:
+        Name: LightRock.001
+        MaterialInstance:
+            Material: 8c5b50e8-4c21-43b9-9584-3efaf5f0b06d:Models/LightRock.001_3
+Modifiers: {}
+~SourceHashes:
+    eedfc90a03f05865c7617c03595db5ec~../../../../../Users/gontc/Downloads/FBX/PointyTower.fbx: 2309f641bcc0ea87b2c81c9c52a4945a

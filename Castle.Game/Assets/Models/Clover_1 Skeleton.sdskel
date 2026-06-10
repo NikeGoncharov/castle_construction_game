@@ -1,0 +1,10 @@
+!Skeleton
+Id: c3259b12-d7a5-48db-88a0-e1ccafdc83fa
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Clover_1.gltf
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    05d0da8fb66af136995e984514ee770d: {Name: Clover_1, Depth: 0}
+~SourceHashes:
+    bfdf87054fa3417cf45aa2c2ce116179~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Clover_1.gltf: 203339de3062a4f7d71a76605af5e2c3

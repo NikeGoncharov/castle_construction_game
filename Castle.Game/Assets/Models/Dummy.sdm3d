@@ -1,0 +1,15 @@
+!Model
+Id: 0d8f5438-22cc-43b6-8926-986332c648b5
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/FBX/Dummy.fbx
+Skeleton: 39f61924-a0ea-4c80-8ffb-3a6273d60320:Models/Dummy Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    f6f2bc61f56bb66c78197018947539ab:
+        Name: DarkWood
+        MaterialInstance:
+            Material: 02c52308-e8d9-48b6-abf3-88b871524c59:Models/DarkWood_2
+Modifiers: {}
+~SourceHashes:
+    03bb1a8f82ff8e2503174c97cd1368a0~../../../../../Users/gontc/Downloads/FBX/Dummy.fbx: 442f7752e7ec8754fc1076295c56642a

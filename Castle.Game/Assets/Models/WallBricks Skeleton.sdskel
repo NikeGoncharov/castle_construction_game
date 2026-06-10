@@ -1,0 +1,11 @@
+!Skeleton
+Id: e61a7412-622f-4364-843f-c5311916f331
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/FBX/WallBricks.fbx
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    8504898b2d1ed63abdd8f3a35243666f: {Name: RootNode, Depth: 0}
+    e46dfb7acee8094713853c6ade9cb873: {Name: WallBricks, Depth: 1}
+~SourceHashes:
+    8578263e315016e7eb08f170c220dfad~../../../../../Users/gontc/Downloads/FBX/WallBricks.fbx: 7ad2f18362794e09f82880a19c7ccc04

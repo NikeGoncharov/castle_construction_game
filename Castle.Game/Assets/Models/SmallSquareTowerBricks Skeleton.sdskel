@@ -1,0 +1,11 @@
+!Skeleton
+Id: 8c620011-8d86-4e34-8b94-d872bb144de7
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/FBX/SmallSquareTowerBricks.fbx
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    7fc55e7ac9a50f7d547241ddc1de7a71: {Name: RootNode, Depth: 0}
+    8451bec89d3758bcdfcc720b58e9f7d2: {Name: SmallSquareTowerBricks, Depth: 1}
+~SourceHashes:
+    7674a631b0d9890d0a5544e6cbdef373~../../../../../Users/gontc/Downloads/FBX/SmallSquareTowerBricks.fbx: bc84cf7c35df39d5e822ff389211c509

@@ -1,0 +1,16 @@
+!Model
+Id: 217d5c88-aec3-45d0-8f8b-a01a11913162
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/RockPath_Round_Wide.gltf
+Skeleton: fc0eeed8-149b-4790-9c02-bcc7483fcde9:Models/RockPath_Round_Wide Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    b39488a64aa253607050f7e59329af1b:
+        Name: PathRocks
+        MaterialInstance:
+            Material: be39e6b0-1d97-40e3-b061-f93a26ae4d5e:Models/PathRocks_16
+Modifiers: {}
+~SourceHashes:
+    ? d22dc39ecc4ecf72d5ce4d13989fdd6e~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/RockPath_Round_Wide.gltf
+    : 88210f6e37f726a024bc3eb2bd464352

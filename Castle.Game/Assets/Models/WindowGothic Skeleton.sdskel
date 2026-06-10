@@ -1,0 +1,11 @@
+!Skeleton
+Id: 6ce9cf16-7879-4e13-81c6-3001feb0fc1c
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/FBX/WindowGothic.fbx
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    d26b255b54558d66c58979ddc2f6dfe2: {Name: RootNode, Depth: 0}
+    0ce5097294db0171deb9354d2cba36b0: {Name: WindowGothic, Depth: 1}
+~SourceHashes:
+    4f019a57823053e3598600847567fce5~../../../../../Users/gontc/Downloads/FBX/WindowGothic.fbx: 21635190b141abfae1116e33ef5708cf

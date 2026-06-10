@@ -1,0 +1,11 @@
+!Skeleton
+Id: dc1cb96d-1845-4e59-819c-fb7d866f32ac
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Pebble_Square_2.gltf
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    300a8ce101a855820debca9597eda041: {Name: Pebble_Square_2, Depth: 0}
+~SourceHashes:
+    ? b81791781dba8b33ed765aef28cb45c0~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Pebble_Square_2.gltf
+    : 0a8bedfbe7fd11aa46a913fdd409501f

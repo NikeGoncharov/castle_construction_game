@@ -1,0 +1,10 @@
+!Skeleton
+Id: 7690d220-69be-4375-b8ee-45377dd7c0dc
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Flower_4_Group.gltf
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    3ead1ff39c686350a99ba94af303e014: {Name: Flower_4_Group, Depth: 0}
+~SourceHashes:
+    c2d7c99c9c0ad0c5cca2b61853143288~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Flower_4_Group.gltf: 4b974d67f526ada287a1d57a11a9b2c9

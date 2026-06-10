@@ -1,0 +1,10 @@
+!Skeleton
+Id: b811aeaa-812d-4614-96af-6bce925e7f15
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Pine_1.gltf
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    8e701171bcac4e5ab87339dbaf6b7a5d: {Name: Pine_1, Depth: 0}
+~SourceHashes:
+    e7f6001559faf31b275c27358b9f9d5c~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Pine_1.gltf: e571578bde42422fc1f649d88ba625a0

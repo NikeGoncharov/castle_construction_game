@@ -1,0 +1,20 @@
+!Model
+Id: 9fa07b83-197a-426d-a145-c15657fcc2e1
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Flower_3_Single.gltf
+Skeleton: 8a69ad8d-5193-4125-9281-ee9ad235f456:Models/Flower_3_Single Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    df49be54d76118cd80cf8349f821eb1a:
+        Name: Leaves
+        MaterialInstance:
+            Material: 338b3bff-be09-42b9-a479-c504d2fbc63e:Models/Leaves_6
+    a9745707c095699db08118f463682a38:
+        Name: Flowers
+        MaterialInstance:
+            Material: 9c46b8c6-5add-4f6c-991c-864d378273c7:Models/Flowers_4
+Modifiers: {}
+~SourceHashes:
+    ? 52354528adf7ed7680fe5ef956b7c547~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Flower_3_Single.gltf
+    : 918ab9c8dcf4930d48565c288387b8ee

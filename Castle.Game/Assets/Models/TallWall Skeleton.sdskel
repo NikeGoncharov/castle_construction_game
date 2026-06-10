@@ -1,0 +1,11 @@
+!Skeleton
+Id: 457057f3-7964-4723-a223-5b2c5e5f79c4
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/FBX/TallWall.fbx
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    51bb7fb57e94b0d4d43aca58fb39a5bc: {Name: RootNode, Depth: 0}
+    3acd7701f78d0459c6ff479c69f6debd: {Name: TallWall, Depth: 1}
+~SourceHashes:
+    12bff8003aeea3b0c6d262e37884fd30~../../../../../Users/gontc/Downloads/FBX/TallWall.fbx: a244cf6aec2a6cc417191ea497c7288e

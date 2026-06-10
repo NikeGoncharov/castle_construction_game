@@ -1,0 +1,11 @@
+!Skeleton
+Id: 9b41f317-76d3-4696-a456-f2459ff1d2fc
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Grass_Common_Short.gltf
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    8f2b0fc2181fae31c3bb60da0ee8326d: {Name: Grass_Common_Short, Depth: 0}
+~SourceHashes:
+    ? 29c905bda041072b487d733ad0bf1b21~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Grass_Common_Short.gltf
+    : d25966d6fcbc4764c66df6501b22e4e2

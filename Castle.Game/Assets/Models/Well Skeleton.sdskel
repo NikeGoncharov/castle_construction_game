@@ -1,0 +1,11 @@
+!Skeleton
+Id: 217b08cf-a701-4ce3-b097-d6c0a92e20a6
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/FBX/Well.fbx
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    5f3a6246974d0525c60db4bf5f920a3b: {Name: RootNode, Depth: 0}
+    4c5131cc1522059023b9d13f48de5598: {Name: Well, Depth: 1}
+~SourceHashes:
+    3f6ff969f3f2dd211a75689279786ebc~../../../../../Users/gontc/Downloads/FBX/Well.fbx: 416e42d5e1f8bac7542f2aa08423bd36

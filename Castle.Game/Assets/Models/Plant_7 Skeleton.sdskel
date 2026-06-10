@@ -1,0 +1,10 @@
+!Skeleton
+Id: a6c2e12c-686f-454f-b827-578a67e8a00f
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Plant_7.gltf
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    c0b30a598a7b31ed36d8f1c25515c0e2: {Name: Plant_7, Depth: 0}
+~SourceHashes:
+    31678df67dc38d46f5f2658c380499ff~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Plant_7.gltf: 975d938793f8c71f298dea39390c318c

@@ -1,0 +1,15 @@
+!Model
+Id: 21fd0ee1-8176-4a6d-abef-6cb8de9f0caa
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/FBX/LargeSquareTowerBricks.fbx
+Skeleton: 15d0257f-e942-45ee-aca2-6c9d8cf9e456:Models/LargeSquareTowerBricks Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    0570e1e1859a1d0be33e65e20036e8f3:
+        Name: LightRock.001
+        MaterialInstance:
+            Material: 208bc145-653d-4dbe-9d03-b3ee97ab3221:Models/LightRock.001
+Modifiers: {}
+~SourceHashes:
+    53334b2954f5eb8535dcf50efa3eb5bf~../../../../../Users/gontc/Downloads/FBX/LargeSquareTowerBricks.fbx: 2fc821bf41d2647ce49801881ab74f57

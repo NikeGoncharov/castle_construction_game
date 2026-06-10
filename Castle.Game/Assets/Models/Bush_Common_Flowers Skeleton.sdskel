@@ -1,0 +1,11 @@
+!Skeleton
+Id: 90953704-0df2-49a6-84ee-21aebd04916b
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Bush_Common_Flowers.gltf
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Nodes:
+    38f5d803459bb02f1b62ec3aebf2d194: {Name: Bush_Common_Flowers, Depth: 0}
+~SourceHashes:
+    ? ec68895f39f5f3563ef746999c21730d~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/Bush_Common_Flowers.gltf
+    : 12fb98a7a73530d85f23e246d7bdfc2f

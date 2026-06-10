@@ -1,0 +1,19 @@
+!Model
+Id: e28d7217-64ae-4049-94ad-d511bf50639f
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/TwistedTree_1.gltf
+Skeleton: 1a5e39b6-eb33-4e87-b07f-43a11202116d:Models/TwistedTree_1 Skeleton
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    9e9902e64f600323b8cb1ab3a24ac472:
+        Name: Bark_TwistedTree
+        MaterialInstance:
+            Material: 8c6172b8-f7e1-411c-b952-5d687994b20c:Models/Bark_TwistedTree_2
+    88fc00676b3016d4bf0ff0e5a2015cb9:
+        Name: Leaves_TwistedTree
+        MaterialInstance:
+            Material: 18ec82b0-8b16-4743-8891-eee7b98a37a1:Models/Leaves_TwistedTree
+Modifiers: {}
+~SourceHashes:
+    75c6bcfffcab5d7081e6109bb91380ab~../../../../../Users/gontc/Downloads/Stylized Nature MegaKit[Standard]/glTF/TwistedTree_1.gltf: bac648b9a17b6fda0f8fd2844e14ba37
