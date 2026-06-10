@@ -31,7 +31,7 @@ public class CastleSimRenderer : SyncScript
     private const float SimStep = 0.1f;        // fixed simulation tick, 10 Hz
     private const float MaxFrameDt = 0.1f;     // clamp hitches so the sim isn't fast-forwarded
     private const int MaxStepsPerFrame = 3;    // backstop against a catch-up spiral
-    private const float HillHeight = 5.25f;
+    private const float HillHeight = 7.35f;
     private const float EyeHeight = 1.7f;
     private const float WalkSpeed = 5f;
     private const float RunMultiplier = 2f;
@@ -41,9 +41,9 @@ public class CastleSimRenderer : SyncScript
     private const string ModelDir = "Models/";
     private const float TreeScale = 1f;
     private const float RockScale = 1f;
-    private const float KeepScale = 5f;
     private const float DecorScale = 1f;
-    private const string KeepModel = "LargeTower";   // shown once the Keep is complete
+    private const string StoneTexture = "Models/Rocks_Diffuse";   // stone skin for the built castle
+    private const int CastleClearCells = 9;                       // prop-free radius (cells) around the castle
 
     private static readonly string[] ForestTrees =
     {
@@ -117,7 +117,7 @@ public class CastleSimRenderer : SyncScript
         var scene = Entity.Scene;
 
         var terrainMaterial = MakeMaterial(new Color(86, 125, 70), doubleSided: true);
-        var terrain = new Entity("Terrain") { new ModelComponent(_terrain.BuildModel(GraphicsDevice, terrainMaterial, step: 0.5f)) };
+        var terrain = new Entity("Terrain") { new ModelComponent(_terrain.BuildModel(GraphicsDevice, terrainMaterial, step: 1.0f)) };
         scene.Entities.Add(terrain);
 
         var sun = new Entity("Sun") { new LightComponent { Type = new LightDirectional(), Intensity = 1.1f } };
@@ -244,6 +244,7 @@ public class CastleSimRenderer : SyncScript
     {
         var scene = Entity.Scene;
         var map = _sim.Map;
+        var keepCell = _sim.Sites[0].Cell;
 
         for (int y = 0; y < map.Height; y++)
         for (int x = 0; x < map.Width; x++)
@@ -252,9 +253,13 @@ public class CastleSimRenderer : SyncScript
             if (!map.IsWalkable(cell))
                 continue;   // skip trees, quarry, keep — anything occupied
 
+            // Keep the castle footprint clear of props.
+            if (System.Math.Abs(x - keepCell.X) <= CastleClearCells && System.Math.Abs(y - keepCell.Y) <= CastleClearCells)
+                continue;
+
             bool forest = map.GetTerrain(cell) == TileType.Forest;
             int h = Hash(x * 2 + 7, y * 2 + 13);
-            if (h % 100 >= (forest ? 45 : 25))   // a bit sparser to keep the bigger map's prop count in check
+            if (h % 100 >= (forest ? 35 : 16))   // sparser to keep the big map's prop count in check
                 continue;
 
             var pool = forest ? ForestDecor : FieldDecor;
@@ -293,6 +298,91 @@ public class CastleSimRenderer : SyncScript
         return generator.Generate(Services);
     }
 
+    private Texture LoadTextureOrNull(string url) => Content.Exists(url) ? Content.Load<Texture>(url) : null;
+
+    /// <summary>The Keep, once complete: a stone-textured castle assembled from boxes — outer
+    /// walls with corner towers, a gatehouse entrance, a tall main hall and two flanking rooms.
+    /// Built at metre scale so it occupies real space on the map.</summary>
+    private Entity BuildCastle()
+    {
+        var stone = LoadTextureOrNull(StoneTexture);
+        var root = new Entity("Castle");
+
+        const float F = 16f;       // footprint half-extent → 32 m square
+        const float T = 1.4f;      // wall thickness
+        const float wallH = 5f;
+        const float gate = 6f;     // entrance gap width (front, -Z, faces the field)
+
+        // Base platform hides the seam where the flat castle meets the sloped ground.
+        AddCastleBox(root, new Vector3(0, -0.5f, 0), new Vector3(2 * F + 3, 1f, 2 * F + 3), stone);
+
+        // Outer curtain walls (front wall split around the gate).
+        AddCastleBox(root, new Vector3(0, wallH / 2, +F), new Vector3(2 * F, wallH, T), stone);   // back
+        AddCastleBox(root, new Vector3(-F, wallH / 2, 0), new Vector3(T, wallH, 2 * F), stone);   // left
+        AddCastleBox(root, new Vector3(+F, wallH / 2, 0), new Vector3(T, wallH, 2 * F), stone);   // right
+        float seg = (2 * F - gate) / 2f;
+        float segOff = gate / 2f + seg / 2f;
+        AddCastleBox(root, new Vector3(-segOff, wallH / 2, -F), new Vector3(seg, wallH, T), stone);
+        AddCastleBox(root, new Vector3(+segOff, wallH / 2, -F), new Vector3(seg, wallH, T), stone);
+        // Gatehouse lintel over the entrance.
+        AddCastleBox(root, new Vector3(0, wallH + 1.5f, -F), new Vector3(gate + 2.5f, 3f, T + 0.8f), stone);
+
+        // Corner towers, taller than the walls.
+        const float towerW = 4.5f, towerH = 9f;
+        foreach (var (sx, sz) in new[] { (-1, -1), (-1, 1), (1, -1), (1, 1) })
+            AddCastleBox(root, new Vector3(sx * F, towerH / 2, sz * F), new Vector3(towerW, towerH, towerW), stone);
+
+        // Tall main hall (the keep/donjon) toward the back.
+        AddCastleBox(root, new Vector3(0, 6f, 4f), new Vector3(14f, 12f, 9f), stone);
+        // Two flanking rooms toward the front.
+        AddCastleBox(root, new Vector3(-9f, 2.5f, -7f), new Vector3(7f, 5f, 7f), stone);
+        AddCastleBox(root, new Vector3(+9f, 2.5f, -7f), new Vector3(7f, 5f, 7f), stone);
+
+        return root;
+    }
+
+    private void AddCastleBox(Entity root, Vector3 center, Vector3 size, Texture stone)
+    {
+        var generator = new CubeProceduralModel { Size = size };
+        generator.MaterialInstance.Material = StoneMaterial(stone, size);
+        var e = new Entity { new ModelComponent(generator.Generate(Services)) };
+        e.Transform.Position = center;
+        root.AddChild(e);
+    }
+
+    /// <summary>Stone material whose UVs tile by the box size (~1 repeat per 2.5 m) so the texture
+    /// keeps a constant density across walls of different sizes; falls back to flat grey if the
+    /// texture isn't available.</summary>
+    private Material StoneMaterial(Texture stone, Vector3 size)
+    {
+        IComputeColor diffuse;
+        if (stone != null)
+        {
+            const float tile = 2.5f;
+            float u = System.Math.Max(size.X, size.Z) / tile;
+            float v = System.Math.Max(size.Y, System.Math.Min(size.X, size.Z)) / tile;
+            diffuse = new ComputeTextureColor(stone)
+            {
+                Scale = new Vector2(u, v),
+                AddressModeU = TextureAddressMode.Wrap,
+                AddressModeV = TextureAddressMode.Wrap,
+            };
+        }
+        else
+        {
+            diffuse = new ComputeColor(new Color(132, 128, 120).ToColor4());
+        }
+
+        return Material.New(GraphicsDevice, new MaterialDescriptor
+        {
+            Attributes = new MaterialAttributes
+            {
+                Diffuse = new MaterialDiffuseMapFeature(diffuse),
+                DiffuseModel = new MaterialDiffuseLambertModelFeature(),
+            }
+        });
+    }
+
     private void SyncEntities(float dt)
     {
         float lerp = Math.Min(1f, dt * 8f);
@@ -314,13 +404,10 @@ public class CastleSimRenderer : SyncScript
         if (site.Complete && !_keepBuilt)
         {
             _keepBuilt = true;
-            var tower = LoadModelOrNull(ModelDir + KeepModel);
-            if (tower != null)
-            {
-                _siteEntity.Get<ModelComponent>().Model = tower;
-                _siteEntity.Transform.Scale = new Vector3(KeepScale);
-                _siteEntity.Transform.Position = OnGround(site.Cell, 0f);
-            }
+            _siteEntity.Get<ModelComponent>().Enabled = false;   // hide the scaffold cube
+            var castle = BuildCastle();
+            castle.Transform.Position = OnGround(site.Cell, 0f);
+            Entity.Scene.Entities.Add(castle);
         }
 
         if (!_keepBuilt)

@@ -8,10 +8,10 @@ namespace Castle.Sim;
 
 public static class Scenarios
 {
-    /// <summary>A wide field that slopes gently up to a forested rise on the right, with a
+    /// <summary>A large field that slopes gently up to a forested rise on the right, with a
     /// stone quarry off in the far part of the map. A crew chops wood and mines stone to
     /// raise the Keep.</summary>
-    public static Simulation ForestKeep(int width = 56, int height = 28)
+    public static Simulation ForestKeep(int width = 112, int height = 56)
     {
         var map = new GridMap(width, height, TileType.Grass);
         var sim = new Simulation(map)
@@ -23,14 +23,14 @@ public static class Scenarios
             DepositSeconds = 0.3f,
         };
 
-        // Forest on the right half. Trees are scattered (~32% of cells) rather than a solid
-        // checkerboard, so the player can actually stroll between them.
+        // Forest on the right half. Sparse (~20% of cells) so the player can walk through and
+        // the big map's tree count stays manageable.
         int forestStart = width / 2;
         for (int x = forestStart; x < width - 1; x++)
         for (int y = 1; y < height - 1; y++)
         {
             map.SetTerrain(new Cell(x, y), TileType.Forest);
-            if (Hash(x, y) % 100 >= 32)
+            if (Hash(x, y) % 100 >= 20)
                 continue;
 
             var cell = new Cell(x, y);
@@ -39,17 +39,19 @@ public static class Scenarios
         }
 
         // Quarry out in the far (lower) part of the map, a real walk from the spawn.
-        foreach (var qCell in new[] { new Cell(24, 24), new Cell(25, 24) })
+        foreach (var qCell in new[] { new Cell(46, 50), new Cell(47, 50) })
         {
             map.SetTerrain(qCell, TileType.Rock);
             map.SetBlocked(qCell, true);
             sim.Quarries.Add(new Quarry(qCell, sim.QuarryYield));
         }
 
-        sim.Stockpiles.Add(new Stockpile(new Cell(10, 10)));
+        sim.Stockpiles.Add(new Stockpile(new Cell(16, 16)));
 
+        // Keep sits on the open field with room around it for the (large) castle the renderer
+        // builds on completion.
         var keep = new ConstructionSite(
-            new Cell(14, 14), "Keep",
+            new Cell(28, 28), "Keep",
             required: new Dictionary<ResourceKind, int>
             {
                 [ResourceKind.Wood] = 12,
@@ -61,7 +63,7 @@ public static class Scenarios
 
         string[] names = { "Aldric", "Brom", "Cedric", "Dunstan", "Edric", "Fulk" };
         for (int i = 0; i < names.Length; i++)
-            sim.Workers.Add(new Worker(names[i], new Cell(2, 4 + i * 3), slotIndex: i));
+            sim.Workers.Add(new Worker(names[i], new Cell(3, 8 + i * 6), slotIndex: i));
 
         return sim;
     }
